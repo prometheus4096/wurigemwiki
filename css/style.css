@@ -1,0 +1,665 @@
+
+/*Override default CSS*/
+
+#sideMenu,
+#top_title {
+    display: none;
+}
+
+#content {
+    padding: 0px;
+    width: 100%;
+    margin-top: -7px;
+    margin-left: 0px;
+    background-color: transparent;
+}
+
+
+/* set all basic objects to neutral formatting, removes all padding, margins, etc and sets the fontsize to 100%*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: roboto, sans-serif;	
+}
+
+ h1,h2,h3,h4,h5,h6 {
+  color:black;
+  background:none;
+  font-weight:normal;
+  margin:0;
+  overflow:hidden;
+  padding-top:.5em;
+  padding-bottom:.17em;
+}
+
+p {
+	line-height:1.5;
+    margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+h1 {
+  font-size: 3.125rem;  
+  margin-bottom:20px;
+  text-align:center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #aaa;
+   margin-bottom:20px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.0rem;
+}
+
+/* set page to fill window*/
+
+html {
+    overflow-y: scroll; /*always show scroll bar*/
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #FFFFFF;
+}
+
+html,
+body,
+#GlobalWrapper {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+	z-index: 1;
+}
+
+#GlobalWrapper {
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+#MainMenu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 105px;
+	z-index: 2;
+}
+
+#TopMenu {
+    height: 65%;
+    width: 100%;
+    background-color: #3e8ba5;
+}
+
+#TopMenuButtonWrapper {
+    position: fixed;
+    width: 65%;
+    height: 68px;
+    top: 0;
+    right: 0;
+}
+
+#TopMenuButtonWrapper ul {
+    list-style: none;
+    height: 100%;
+}
+
+#TopMenuButtonWrapper ul li {
+    display: inline;
+    float: left;
+    text-decoration: none;
+}
+
+#TopMenuButtonWrapper ul li a {        
+    height:50%;
+    margin-top:22.5px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+	color:white;
+    /*line-height: 100px;	*/
+}
+
+
+#TopMenuButtonWrapper ul li  a:hover, a:active {
+	/*color: #ECEBEC; color doesn't look nice for hover only*/
+	text-decoration: none;
+}
+
+/*#TopMenuButtonWrapper ul li a:hover{	
+	background-color:#ffdae9;	
+
+}*/
+
+.nav-item {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.project-li {
+    /*width: 10%*/
+}
+
+.wet-lab-li {
+    /*width: 10%*/
+}
+
+.model-li {
+    /*width: 9%*/
+}
+
+.human-practices-li {
+    /*width: 20%*/
+}
+
+.notebook-li {
+    /*width: 13%*/
+}
+
+.team-li {
+    /*width: 9%*/
+}
+
+#SubMenu {
+    height: 35%;
+    width: 100%;
+    /*background-color: #ffdae9;*/
+    /*color gradient*/
+	background-color:#FFFFFF;
+    /*background: -moz-linear-gradient(left, #ffdae9, #ffdae9, white, white, white, white, #ffdae9); For Firefox 3.6 to 15 */
+}
+
+#SubMenuButtonWrapper {
+    position: fixed;
+    height: 36.75px;
+    width: 65%;
+    top: 68px;
+    right: 0;
+}
+
+#SubMenuButtonWrapper ul {
+    list-style: none;
+    height: 100%;
+}
+
+#SubMenuButtonWrapper ul li {
+    float: left;
+}
+
+#SubMenuButtonWrapper ul li a {
+    padding-right: 30px;
+    /*display:block;*/
+    height: 36.75px;
+    /*line-height: 36px;	*/	
+	color:black;
+    display: flex;
+    align-items: center;
+}
+
+#SubMenuButtonWrapper ul li a:hover, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.description-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.design-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.results-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.parts-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.demo-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.kinetics-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.qs-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.integration-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.integrated-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.scenario-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.safety-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.outreach-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.collaboration-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.protocols-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.interlab-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.members-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.attributions-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+#project-sub {
+    display: none;
+}
+
+#wet-lab-sub {
+    display: none;
+}
+
+#model-sub {
+    display: none;
+}
+
+#human-practices-sub {
+    display: none;
+}
+
+#notebook-sub {
+    display: none;
+}
+
+#team-sub {
+    display: none;
+}
+
+
+/*format the main front page*/
+#FrontPage {
+	position:relative;
+    top: 105px;
+	height: calc(100% - 105px);
+	/* Opera */
+    height: -o-calc(100% - 105px);
+    /* Firefox */
+    height: -moz-calc(100% - 105px);
+    /* WebKit */
+    height: -webkit-calc(100% - 105px);
+    /* Opera */
+    height: -o-calc(100% - 105px);
+    /* Standard */
+    height: calc(100% - 105px); 
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.FrontpageTitle {	
+	
+}
+
+#ProjectImage {
+    height: 100%;
+    width: 100%;
+}
+
+#ProjectImage img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*General formatting for content */
+#Center-Text-Column-wrapper {
+    position:relative;
+    top: 105px;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.Center-Text-Column {
+    position: relative;
+    clear: both;
+    width: 60%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.TextContent p {
+    text-align: left;
+    vertical-align: baseline;
+    font-size: 0.875em;
+    font-family: roboto, sans-serif;
+	color: #141823;;
+    margin-bottom: 1.2em;
+}
+
+.TextContent h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;    
+	color: #3399ff;
+	text-align: left;
+}
+
+.TextContent h2 {
+    line-height: 1.6;
+    text-align: left;
+	color: #141823;;
+}
+
+
+/*Accordion box formatting*/
+/*Accordion panel heading text formatting*/
+.panel-heading h4 {
+	padding-top: .5em;
+	padding-bottom: .17em;
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.1;
+	font-size: 30px;
+	overflow:hidden;
+	text-align: justify;
+	direction: ltr;
+}
+
+#Footer {
+	position: relative;
+    margin-top: 100px;
+    height: 40px;
+    clear: both;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+#Footer p {
+    vertical-align: baseline;
+    font-family: roboto, sans-serif;
+    text-align: center;
+    line-height: 3em;
+    font-size: 0.875em;
+}
+
+.clearer {
+    clear: both;
+}
+
+/*override CCS for small windows and mobile*/
+@media (max-width: 1460px) {
+    /*whatever appears in the menu at the left either disappears or is now on top of the menu*/
+    #TopMenuButtonWrapper {
+        position: relative;
+        padding-left:16px;
+        width: 100%;
+        float: right;
+    }
+    .nav-item {
+        font-size: 1.2em;
+    }
+    #TopMenuButtonWrapper ul li {
+        float: left;
+    }
+    #TopMenuButtonWrapper ul li a {
+        padding-right: 16px;
+    }
+    #SubMenu {
+       background: -moz-linear-gradient(left, white, white, white, white, white, #ffdae9, #ffdae9); /* For Firefox 3.6 to 15 */
+    }
+    #SubMenuButtonWrapper {
+        width: 100%;       
+        padding-left:16px;
+        float: right;
+    }
+}
+
+/*Mobile site elements*/
+
+
+
+#MobileMenu {
+	display:none;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+    z-index: 1;
+}
+
+#MobileMenu ul {
+	overflow:hidden;
+	height:100%;
+	width:50%;	
+    float:left;
+}
+
+#MainMobileMenu {
+    display:none;
+}
+
+#MobileSubMenu {
+    display:none;
+}
+
+#MobileMenu ul li {	
+	height:14.28%;
+}
+
+#MobileMenu ul li button{
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/
+	display: inline;    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;	
+	text-decoration:none;
+}
+
+#MobileSubMenu li {	
+	display:none;    	
+}
+
+
+#MobileMenu ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;  
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.MobileIconGlobal {
+    display:none;
+	position:absolute;
+    top: 0;
+    cursor:pointer;   
+	height:14.28%;
+}
+	
+.MobileIconGlobal  img {
+    z-index:999;
+    height:100%;
+}
+
+.MobileIcon-li-mo img {
+    z-index:999;
+    height:100%;
+	width:auto;
+    cursor:pointer;
+}
+
+
+/*Mobile devices*/
+@media (max-width:940px) {
+   
+	body, html { 
+	overflow-x:hidden; 
+	}
+	
+	/*Hide normal menu*/
+	#MainMenu {
+		display:none;
+	}
+	
+	/*Do stuff with mobile*/	
+	.MobileIconGlobal {
+        display:inline;		
+	}
+	 
+
+    #TopMenuButtonWrapper {
+        position: relative;
+        padding-left:16px;
+        width: 100%;
+        float: right;
+    }
+    
+    #TopMenuButtonWrapper ul {
+        display:none;
+    }
+        
+    #SubMenu {
+       background: -moz-linear-gradient(left, white, white, white, white, white, white, #ffdae9); /* For Firefox 3.6 to 15 */
+    }
+
+    #SubMenuButtonWrapper ul {
+        display:none;
+    }
+	
+	/*General formatting, making it smaller*/
+	.Center-Text-Column {
+		min-width: 0px;
+	}
+    
+}
+
+@media (min-width:941px) {
+    /*Turn off mobile again*/
+    #MainMenu {
+		display:inline;
+	}
+
+    #MobileMenu {
+        display:none;		
+	}
+
+    #MainMobileMenu {
+        display:none;		
+	}   
+}
+
+
+/*Bootstrap accordion formatting*/
+#accordion {
+	box-sizing: border-box;
+    
+}
+
+
+/*Split page in top 90% and bottom 10% for down arrow*/
+#DownArrow {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 94%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+	opacity: 0.5;
+	z-index: 999;
+}
