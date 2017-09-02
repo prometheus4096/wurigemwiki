@@ -529,7 +529,7 @@
 
             //delay of 250 ms before menu hover action takes effect
             var timer;
-            var delay = 250;   
+            var delay = 0;   
 
             //load color variables from css	
             color1 = $('#TopMenu').css('background-color');
@@ -541,6 +541,7 @@
 			clearTimeout(timer);
             timer = setTimeout(function () {
 				clearTimeout(timer);
+				delay = 350;
                 $("#project-sub").show();
                 $("#project").css("text-decoration","underline");
                 $("#wet-lab").css("text-decoration","none");
@@ -580,7 +581,8 @@
             $("#wet-lab").on("mouseover", function() {
 			clearTimeout(timer);
             timer = setTimeout(function () {  
-				clearTimeout(timer);          
+				clearTimeout(timer);
+				delay = 350;				
                 $("#wet-lab-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","underline");
@@ -621,7 +623,8 @@
             $("#model").on("mouseover", function() {
 				clearTimeout(timer);
 				timer = setTimeout(function () {
-				clearTimeout(timer);   
+				clearTimeout(timer); 
+				delay = 350;
                 $("#model-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
@@ -663,6 +666,7 @@
 				clearTimeout(timer);
 				timer = setTimeout(function () {
 				clearTimeout(timer);
+				delay = 350;
                 $("#human-practices-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
@@ -704,6 +708,7 @@
 				clearTimeout(timer);
             timer = setTimeout(function () {
 				clearTimeout(timer);
+				delay = 350;
                 $("#notebook-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
@@ -745,6 +750,7 @@
 				clearTimeout(timer);
             timer = setTimeout(function () {
 				clearTimeout(timer);
+				delay = 350;
                 $("#team-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
@@ -933,6 +939,7 @@
 			//Reset submenu selection after hovering over FrontPage or CenterTextColumnWraooer
 			$("#FrontPage").on("mouseover", function() {
 				clearTimeout(timer);
+				delay = 0;
                 $("#team-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
@@ -972,6 +979,7 @@
 			//Reset submenu selection after hovering over FrontPage or CenterTextColumnWraooer
 			$("#Center-Text-Column-wrapper").on("mouseover", function() {
 				clearTimeout(timer);
+				delay = 0;
                 $("#team-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");

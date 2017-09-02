@@ -30,7 +30,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     font-family: roboto, sans-serif;	
 }
 
@@ -40,16 +39,15 @@
   font-weight:normal;
   margin:0;
   overflow:hidden;
-  padding-top:.5em;
-  padding-bottom:.17em;
+  padding-top:.5rem;
+  padding-bottom:.17rem;
 }
 
 p {
 	line-height:1.5;
     margin-top:20px;
 	margin-bottom:20px;
-	font-size: 0.875em;
-	
+	font-size: 1.0rem;	
 }
 
 h1 {
@@ -66,7 +64,7 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.0rem;
 }
 
 h4 {
@@ -83,11 +81,11 @@ h5 {
 
 html {
     overflow-y: scroll; /*always show scroll bar*/
-    height: 100%;
+    /*height: 100%;*/
 }
 
 body {
-    min-height: 100%;
+    /*min-height: 100%;*/
     background-color: #FFFFFF;
 }
 
@@ -99,7 +97,9 @@ html, body, #GlobalWrapper {
 }
 
 #GlobalWrapper {
-    top: 0;
+	position:relative;
+	height:auto;
+    top: 0;	
     background-color: #FFFFFF;
 }
 
@@ -146,7 +146,6 @@ html, body, #GlobalWrapper {
     /*line-height: 100px;	*/
 }
 
-
 #TopMenuButtonWrapper ul li  a:hover, a:active {
 	/*color: #ECEBEC; color doesn't look nice for hover only*/
 	text-decoration: none;
@@ -158,7 +157,7 @@ html, body, #GlobalWrapper {
 }*/
 
 .nav-item {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
@@ -231,7 +230,7 @@ html, body, #GlobalWrapper {
 
 /*Formatting for all main menu elements*/
 .sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
@@ -241,115 +240,115 @@ a:focus {
 }
 
 .description-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .design-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .summary-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .achievements-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .results-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .parts-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .demo-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .kinetics-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .qs-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .integration-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .integrated-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .scenario-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .safety-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .outreach-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .collaboration-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .protocols-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .interlab-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .members-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
 
 .attributions-sub-nav-item {
-    font-size: 0.8em;
+    font-size: 1.0rem;
     color: black;
     text-decoration: none;
 }
@@ -434,26 +433,28 @@ a:focus {
 .Textbox {
 	margin-top: 4px;
 	margin-bottom: 4px;
+	font-size: 1.0rem;
 }
 
 .TextContent p {
     text-align: left;
     vertical-align: baseline;
-    font-size: 0.875em;
+    font-size: 1.0rem;
     font-family: roboto, sans-serif;
 	color: #141823;;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.2rem;
 }
 
 .TextContent h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.2em;
-    margin-top: 0.2em;    
+    font-size: 3.125rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;    
 	color: #3399ff;
 	text-align: left;
 }
 
 .TextContent h2 {
+	font-size: 2.25rem;
     line-height: 1.6;
     text-align: left;
 	color: #141823;;
@@ -462,39 +463,48 @@ a:focus {
 /*Accordion box formatting*/
 /*Accordion panel heading text formatting*/
 .panel-heading h4 {
-	padding-top: .5em;
-	padding-bottom: .17em;
+	padding-top: .5rem;
+	padding-bottom: .17rem;
 	margin: 0;
 	font-weight: 500;
 	line-height: 1.1;
-	font-size: 30px;
+	font-size: 2.25rem;
 	overflow:hidden;
 	text-align: justify;
 	direction: ltr;
 }
 
-#Footer {
-	position: relative;
-    margin-top: 100px;
-    height: 40px;
-    clear: both;
-    width: 100%;
-    background-color: #FFFFFF;
+.Citations li{
+	font-size: 0.7rem;
+	
 }
 
-#Footer p {
+#Footer {
+	top:105px;
+	position:relative;
+	bottom: 0;
+	clear: both;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height:48px;
+	background-color: #FFFFFF;
+}
+
+#Footer p {	
+	border-top: 1px solid #aaa;
+	margin-top: 32px;
+	margin-bottom: 0px;
     vertical-align: baseline;
     font-family: roboto, sans-serif;
     text-align: center;
-    line-height: 3em;
-    font-size: 0.875em;
+    line-height: 3rem;
+    font-size: 0.7rem;
 }
 
 .clearer {
     clear: both;
 }
-
-.
 
 /*All results specific divs*/
 
@@ -647,7 +657,7 @@ a:focus {
         float: right;
     }
     .nav-item {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
     #TopMenuButtonWrapper ul li {
         float: left;
