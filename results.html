@@ -43,7 +43,7 @@
 
     <div id="GlobalWrapper">
         <div class="MobileIconGlobal">
-            <img src="./images/mobileicon.png" />
+			<img src="./images/mobileicon.png" />
         </div>
         <div id="MainMenu">
 
@@ -69,14 +69,14 @@
                 <div id="SubMenuButtonWrapper">
 
                     <ul id="project-sub">
-                        <li><a href="description.html" class="description-sub-nav-item">Description</a></li>
+                        <li><a href="Description.html" class="description-sub-nav-item">Description</a></li>
                         <li><a href="http://2017.igem.org/Team:Wageningen_UR/Project/Design" class="design-sub-nav-item">Design</a></li>
                         <li><a href="http://2017.igem.org/Team:Wageningen_UR/Project/Summary" class="summary-sub-nav-item">Summary</a></li>
                         <li><a href="http://2017.igem.org/Team:Wageningen_UR/Project/Achievements" class="achievements-sub-nav-item">Achievements</a></li>
                     </ul>
                     <ul id="wet-lab-sub">
                         <li><a href="http://2017.igem.org/Team:Wageningen_UR/Results/Parts" class="parts-sub-nav-item">Parts</a></li>
-                        <li><a href="results.html" class="results-sub-nav-item">Results</a></li>
+                        <li><a href="Results.html" class="results-sub-nav-item">Results</a></li>
                         <li><a href="http://2017.igem.org/Team:Wageningen_UR/Results/Demo" class="demo-sub-nav-item">Demo</a></li>
                     </ul>
                     <ul id="model-sub">
@@ -115,7 +115,7 @@
         <div class="clearer"></div>
         <div id="Center-Text-Column-wrapper">
             <div class="container Center-Text-Column">
-
+			<section class="Results">
                 <div class="row">
                     <div class="col-lg-10-offset-2 ResultsTest col-centered">
 
@@ -142,10 +142,10 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#AffiDetails" aria-expanded="true" aria-controls="AffiDetails">
-          <div class="col-md-11">Details</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
-        </a>
-      </h4>
+											<a data-toggle="collapse" data-parent="#accordion" href="#AffiDetails" aria-expanded="true" aria-controls="AffiDetails">
+												<div class="col-md-11">Details</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+											</a>
+										</h4>
                                     </div>
 
                                     <div id="AffiDetails" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -167,10 +167,10 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#AffiMethods" aria-expanded="true" aria-controls="AffiMethods">
-          <div class="col-md-11">Methods</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
-        </a>
-      </h4>
+											<a data-toggle="collapse" data-parent="#accordion" href="#AffiMethods" aria-expanded="true" aria-controls="AffiMethods">
+												<div class="col-md-11">Methods</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+											</a>
+										</h4>
                                     </div>
 
                                     <div id="AffiMethods" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -190,15 +190,30 @@
 
                             <div class="panel panel-info">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">InfoBox</h3>
+                                    <h4 class="panel-title">InfoBox</h4>
                                 </div>
                                 <div class="panel-body">
                                     Some info here....
                                 </div>
                             </div>
 
+							<p>
+							And we also want to show a figure.
+							</p>
+							
+							<div class="figure-center">
+								<div class="figure-center-imagebox" >
+									<img class="figure-center-img" src="./images/model/QS/data.png"/>
+								</div>
+								<div class="figure-center-caption">
+									<b>Figure1:</b> Here we have a caption. This text will describe the figure and explain how it relates to the experiment described in the text.
+								</div>
+							</div>
+								
                             <p>
-                                Conclusion/Discussion on the affibody experiment.
+                                <h4>Conclusion
+								</h4>
+								Conclusion/Discussion on the affibody experiment.
                             </p>
 
                         </section>
@@ -207,7 +222,9 @@
                     <!-- ResultsTest -->
                 </div>
                 <!-- Bootstrap row -->
-
+			
+			<section class="Results">
+			<!-- Results section -->
             </div>
             <!-- Bootstrap container -->
 
@@ -228,7 +245,7 @@
     <div id="MobileMenu">
         <ul id="MainMobileMenu">
             <li class="MobileIcon-li-mo" class="button">
-                <img class="MobileIconMenu" src="mobileicon.png" /></li>
+                <img class="MobileIconMenu" src="./images/mobileicon.png" /></li>
             <li>
                 <button class="project-li-mo">Project</button>
             </li>
@@ -274,7 +291,7 @@
 
             <!--Submenu Items-->
             <li class="description-sub-li-mo">
-                <button onclick="location.href='description.html'" type="button">Description</button>
+                <button onclick="location.href='Description.html'" type="button">Description</button>
             </li>
             <li class="design-sub-li-mo">
                 <button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Project/Design'" type="button">Design</button>
@@ -283,7 +300,7 @@
                 <button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Results/Parts'" type="button">Parts</button>
             </li>
             <li class="results-sub-li-mo">
-                <button onclick="location.href='results.html'" type="button">Results</button>
+                <button onclick="location.href='Results.html'" type="button">Results</button>
             </li>
             <li class="demo-sub-li-mo">
                 <button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Results/Demo'" type="button">Demo</button>
