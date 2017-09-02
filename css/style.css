@@ -1,8 +1,17 @@
-
 /*Override default CSS*/
 
-#sideMenu,
-#top_title {
+#MobileMenu {
+	display:none;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+    z-index: 1;
+}
+
+#sideMenu, #top_title {
     display: none;
 }
 
@@ -16,7 +25,6 @@
 
 
 /* set all basic objects to neutral formatting, removes all padding, margins, etc and sets the fontsize to 100%*/
-
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +48,7 @@ p {
 	line-height:1.5;
     margin-top:20px;
 	margin-bottom:20px;
+	font-size: 0.875em;
 	
 }
 
@@ -52,18 +61,21 @@ h1 {
 h2 {
   font-size: 2.25rem;
   border-bottom: 1px solid #aaa;
-   margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 h3 {
+  font-weight: bold;
   font-size: 2rem;
 }
 
 h4 {
+  font-weight: bold;
   font-size: 1.25rem;
 }
 
-h4 {
+h5 {
+  font-weight: bold;
   font-size: 1.0rem;
 }
 
@@ -219,6 +231,7 @@ body,
 	text-decoration: none;
 }
 
+/*Formatting for all main menu elements*/
 .sub-nav-item {
     font-size: 0.8em;
     color: black;
@@ -236,6 +249,19 @@ body,
     color: black;
     text-decoration: none;
 }
+
+.summary-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.achievements-sub-nav-item {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+}
+
 
 .results-sub-nav-item {
     font-size: 0.8em;
@@ -465,7 +491,149 @@ body,
     clear: both;
 }
 
-/*override CCS for small windows and mobile*/
+
+/*All results specific divs*/
+
+/*Set all H types in 'Results' to the correct font size*/
+
+.Results h1 {
+  font-size: 3.125rem;  
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.Results h2 {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #aaa;
+  margin-bottom:20px;
+}
+
+.Results h3 {
+  font-size: 2rem;
+}
+
+.Results h4 {
+  font-size: 1.25rem;
+}
+
+.Results h5 {
+  font-size: 1.0rem;
+}
+
+
+.figure-center {
+	width:75%;
+	margin: 0 auto;
+    text-align: left;
+	border: 1px solid #000000;	
+}
+
+.figure-center-imagebox {
+	padding:12px;		
+}
+
+.figure-center-img {
+	width:100%;
+	display:block;	
+	border: 1px solid #000000;	
+}
+
+.figure-center-caption {
+	padding:12px;
+}
+
+
+/*Mobile site elements*/
+#MobileMenu {
+	display:none;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+    z-index: 3;
+}
+
+#MobileMenu ul {
+	overflow:hidden;
+	height:100%;
+	width:50%;	
+    float:left;
+}
+
+#MainMobileMenu {
+    display:none;
+}
+
+#MobileSubMenu {
+}
+
+#MobileMenu ul li {	
+	height:14.28%;
+}
+
+#MobileMenu ul li button{
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/
+	display: inline;    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;	
+	text-decoration:none;
+}
+
+#MobileSubMenu li {	
+	display:none;    	
+}
+
+#MobileMenu ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.MobileIconGlobal {
+    display:none;
+	position:absolute;
+    top: 0;
+    cursor:pointer;   
+	height:14.28%;
+	z-index:0;
+}
+	
+.MobileIconGlobal  img {
+    z-index:999;
+    height:100%;
+}
+
+.MobileIcon-li-mo img {
+    z-index:999;
+    height:100%;
+	width:auto;
+    cursor:pointer;
+}
+
+.MobileIconMenu {		
+	background-color:white;
+	height: 100%;
+}
+
+/*Align menu on the left when window is smaller*/
 @media (max-width: 1460px) {
     /*whatever appears in the menu at the left either disappears or is now on top of the menu*/
     #TopMenuButtonWrapper {
@@ -493,101 +661,11 @@ body,
     }
 }
 
-/*Mobile site elements*/
-
-
-
-#MobileMenu {
-	display:none;
-	bottom: 0;
-	left: 0;
-	width:100%;
-	height:100%;
-	position:fixed;
-	overflow:hidden;
-    z-index: 1;
-}
-
-#MobileMenu ul {
-	overflow:hidden;
-	height:100%;
-	width:50%;	
-    float:left;
-}
-
-#MainMobileMenu {
-    display:none;
-}
-
-#MobileSubMenu {
-    display:none;
-}
-
-#MobileMenu ul li {	
-	height:14.28%;
-}
-
-#MobileMenu ul li button{
-	height:100%;
-	width:100%;
-	border: 1px solid black;	
-	background:white;
-    color:black;
-	/*border: 1px solid #141823;;*/
-	display: inline;    
-	text-align: center;
-	font-size:4.0vw;
-	cursor:pointer;	
-	text-decoration:none;
-}
-
-#MobileSubMenu li {	
-	display:none;    	
-}
-
-
-#MobileMenu ul li a{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;  
-	height:100%;
-	width:100%;
-	border: 1px solid black;	
-	background:white;
-    color:black;
-	/*border: 1px solid #141823;;*/    
-	text-align: center;
-	font-size:4.0vw;
-	cursor:pointer;
-	text-decoration:none;
-}
-
-.MobileIconGlobal {
-    display:none;
-	position:absolute;
-    top: 0;
-    cursor:pointer;   
-	height:14.28%;
-}
-	
-.MobileIconGlobal  img {
-    z-index:999;
-    height:100%;
-}
-
-.MobileIcon-li-mo img {
-    z-index:999;
-    height:100%;
-	width:auto;
-    cursor:pointer;
-}
-
-
 /*Mobile devices*/
 @media (max-width:940px) {
    
 	body, html { 
-	overflow-x:hidden; 
+	/*overflow-x:hidden; */
 	}
 	
 	/*Hide normal menu*/
@@ -599,8 +677,12 @@ body,
 	.MobileIconGlobal {
         display:inline;		
 	}
-	 
-
+	
+	
+	.Center-Text-Column {
+		width: 90%;
+	}
+	
     #TopMenuButtonWrapper {
         position: relative;
         padding-left:16px;
@@ -627,10 +709,15 @@ body,
     
 }
 
+/*when screen is not mobile*/
 @media (min-width:941px) {
     /*Turn off mobile again*/
     #MainMenu {
 		display:inline;
+	}
+	
+	.Center-Text-Column {
+		width: 80%;
 	}
 
     #MobileMenu {
@@ -638,7 +725,7 @@ body,
 	}
 
     #MainMobileMenu {
-        display:none;		
+        display:none;
 	}   
 }
 
