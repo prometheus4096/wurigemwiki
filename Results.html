@@ -20,7 +20,7 @@
     <meta name="ResourceLoaderDynamicStyles" content="" />
 
     <!-- Google JQuery -->
-    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Font Awesome css -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -39,8 +39,6 @@
 <body>
 
     <!-- All items drawn on top of the page, with absolute positioning -->
-    <!-- Down arrow with absolute positioning -->
-    <img id="DownArrow" src="./images/double_arrow_grey.svg"/>
     <!-- div that sits on the bottom of the page -->
 
     <div id="GlobalWrapper">
@@ -114,58 +112,135 @@
         </div>
         <!-- MainMenu -->
 
-        <div id="FrontPage">
-
-            <div id="ProjectImage">
-
-                <img src="./images/placeholder1.jpg" />
-
-            </div>
-            <!-- ProjectImage -->
-
-        </div>
-        <!-- FrontPage -->
-
         <div class="clearer"></div>
-        <div id="Center-Text-Column-wrapper">
-
+       <div id="Center-Text-Column-wrapper">
             <div class="container Center-Text-Column">
-
+			<section class="Results">
                 <div class="row">
-                    <div class="col-lg-12 TextContent">
+                    <div class="col-lg-10-offset-2 ResultsTest col-centered">
 
-                        <br>
-                        <h1 class=FrontpageTitle">Wageningen University 2017:<br> Creating a modular tropical disease diagnostic</h1>
-						<p>As we enter the 21st century, infectious diseases still present a challenge to global health. New diseases like Zika emerge, with the threat of becoming pandemic. At the same time, the eradication of neglected tropical diseases, that affect the poorest of the poor, is slowly coming within reach. New infectious diseases emerge from developing regions, and these same regions still struggle with existing diseases. It is these people that have most to benefit for improved diagnostic tests.</p>
-						<p>Cheap and accessible diagnostics are crucial in our efforts to monitor and control the spreading of new diseases, and to alleviate people from the burdens of existing diseases. No successful treatment is possible without an assortment of diagnostic tests.</p>
+                        <section class="ResultsIntro">
+                            <div class="Results-Title">
+                                <h1>Results</h1> </div>
 
-						<h2>Synthetic Biology</h2>
-						<p>Synthetic biology is an engineering discipline that offers innovative technologies and solutions to many of the challenges we will face as we enter the 21st century. We, the Wageningen University &amp; Research 2017 iGEM team, take on the challenge of using synthetic biology to diagnose infectious diseases.
-							<br>
-							<br>Living cells are high-tech machines that can grow and multiply under simple conditions and at low cost. In this way, advanced technology can easily be made available to all.
-							<br>Our goal is to reprogram simple bacteria so that they can detect, interpret, and report on markers of disease. The bacteria will detect disease molecules and generate a visual output.
-							<br>These cheap bacteria will then become the crucial component of our diagnostic test kit. Such a test can be cheap, easy to operate, and in principle be produced locally. The final diagnostic device will be a modular system that can be adapted to diagnose many different diseases, without any advanced laboratory equipment.</p>
+                            <div class="Textbox Results-Desc">
+                                <p>
+                                    Here we list our lab result highlights. We write an introduction here.
+                                </p>
+                            </div>
+                        </section>
 
-						<h2>iGEM Competition</h2>
-						<p>This summer, our team will work hard to develop mathematical models to help our designs, and implement these designs by growing bacteria in the lab. We also aim to engage the general public and cooperate with people in the field, working to contain infectious diseases.
+                        <section class="qs">
+                            <div class="Textbox Results-Title">
+                                <h2> This may be about affibodies</h2> </div>
 
-							<br>We intend to provide scientific advances, promote the role that synthetic biology can play in solving real-world problems, and raise awareness on the impact of infectious diseases and the important role of diagnostics. We hope to represent the Wageningen University in the <a href="http://www.wur.nl/en/Expertise-Services/Chair-groups/Agrotechnology-and-Food-Sciences/Laboratory-of-Systems-and-Synthetic-Biology/iGEM.htm" class="" title="iGEM Wageningen University">International Genetically Engineered Machine competition (iGEM)</a>, this fall in Boston.
-							<br>
-						</p>
-						<br>
-					</div>
-					<!-- TextContent -->
+                            <p>
+                                We describe the goal of the experiment here.
+                            </p>
 
-				</div>
-				<!-- row -->
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#AffiDetails" aria-expanded="true" aria-controls="AffiDetails">
+												<div class="col-md-11">Details</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+											</a>
+										</h4>
+                                    </div>
 
-            </div>
-            <!-- Center-Text-Column -->
-        </div>
-        <!-- Center-Text-Column-wrapper -->
+                                    <div id="AffiDetails" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body bg-primary">
+                                            <p>
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Put a graph and a table placeholder example below.
+                            </p>
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#AffiMethods" aria-expanded="true" aria-controls="AffiMethods">
+												<div class="col-md-11">Methods</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+											</a>
+										</h4>
+                                    </div>
+
+                                    <div id="AffiMethods" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body bg-primary">
+                                            <p>
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                We want to have some more different objects to display stuff.
+                            </p>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">InfoBox</h4>
+                                </div>
+                                <div class="panel-body">
+                                    Some info here....
+                                </div>
+                            </div>
+
+							<p>
+							And we also want to show a figure.
+							</p>
+							
+							<div class="figure-center">
+								<div class="figure-center-imagebox" >
+									<img class="figure-center-img" src="./images/Model/QS/data.png"/>
+								</div>
+								<div class="figure-center-caption">
+									<b>Figure1:</b> Here we have a caption. This text will describe the figure and explain how it relates to the experiment described in the text.
+								</div>
+							</div>
+								
+                            
+                            <h4>Conclusion
+							</h4>
+							</p>
+							Conclusion/Discussion on the affibody experiment.
+                            </p>
+							
+							<div class="Textbox Citations">
+								<h4>
+								References
+								</h4>
+							
+								<ol>
+									<li>Williams, Joshua W., et al. "Robust and sensitive control of a quorum‐sensing circuit by two interlocked feedback loops." <i>Molecular systems biology</i> 4.1 (2008): 234.</li>
+									<li>Bousse, Luc. "Whole cell biosensors." <i>Sensors and Actuators B: Chemical</i> 34.1-3 (1996): 270-275.</li>
+									<li>Bassler, Bonnie L., and Richard Losick. "Bacterially speaking." <i>Cell</i> 125.2 (2006): 237-246.</li>
+								</ol>
+							
+							</div>
+							<!-- citations -->
+							
+
+                        </section>
+
+                    </div>
+                    <!-- ResultsTest -->
+                </div>
+<!-- Bootstrap row -->
 
         <div id="Footer">
-            <p>iGEM Wageningen UR 2017. Send us an <a href="mailto:igemwageningen@gmail.com" class="soft_link">email</a> or follow us on <a class="soft_link" href="http://www.facebook.com/iGEMWageningen" target="_blank">Facebook</a>
+            <p>iGEM Wageningen UR 2017. Send us an <a href="mailto:igemwageningen@gmail.com " class="soft_link ">email</a> or follow us on <a class="soft_link " href="http://www.facebook.com/iGEMWageningen " target="_blank ">Facebook</a>
             </p>
         </div>
         <!-- Footer -->
@@ -173,55 +248,111 @@
     </div>
     <!-- GlobalWrapper -->
 
-	<!-- Mobile site menu -->
-	<div id="MobileMenu">
-		<ul id="MainMobileMenu">
-			<li class="MobileIcon-li-mo" class="button">
-				<img class="MobileIconMenu" src="./images/mobileicon.png"/></li>
-			<li><button class="project-li-mo">Project</button></li>
-            <li><button class="wet-lab-li-mo">Wet-lab</button></li>
-            <li><button class="model-li-mo">Model</button></li>
-            <li><button class="human-practices-li-mo">Human Practices</button></li>
-            <li><button class="notebook-li-mo">Notebook</button></li>
-            <li><button class="team-li-mo">Team</button></li>
-		</ul>
+    <!-- Mobile site menu -->
 
-		<ul id="MobileSubMenu">
-			<li class="fill-sub-li-mo" class="button"></li>
-
-			<!-- Repeat Main menu Items-->			
-			<li class="project-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Projects'" type="button">Project</button></li>
-            <li class="wet-lab-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Wet-lab'" type >Wet-lab</button></li>
-            <li class="model-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Model'" >Model</button></li>
-            <li class="human-practices-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Human_Practices'" >Human Practices</button></li>
-            <li class="notebook-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Notebook/Protocols'" >Notebook</button></li>
-            <li class="team-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Team'" >Team</button></li>
-
-			<!--Submenu Items-->		
-			<li class="description-sub-li-mo"><button onclick="location.href='description.html'" type="button">Description</button></li>
-            <li class="design-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Project/Design'" type="button">Design</button></li>
-			<li class="summary-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Project/Summary'" type="button">Summary</button></li>
-			<li class="achievements-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Project/Achievements'" type="button">Achievements</button></li>
-            <li class="parts-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Results/Parts'" type="button">Parts</button></li>
-            <li class="results-sub-li-mo"><button onclick="location.href='results.html'" type="button">Results</button></li>
-			<li class="demo-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Results/Demo'" type="button">Demo</button></li>	
-			<li class="kinetics-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Model/Kinetics'" type="button">Kinetics</button></li>
-			<li class="qs-sub-li-mo"><button onclick="location.href='qs.html'" type="button">Quorum Sensing</button></li>
-			<li class="integration-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Model/Integration'" type="button"></button>Integration</button></li>
-			<li class="integrated-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/HP/Gold_Integrated'" type="button">Integrated</button></li>
-			<li class="scenario-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Human_Practice/SynBio'" type="button">Scenario</button></li>
-			<li class="safety-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Safety'" type="button">Safety & Ethics</button></li>
-			<li class="outreach-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Outreach'" type="button">Outreach</button></li>		
-			<li class="collaboration-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Collaborations'" type="button">Collaborations</button></li>
-			<li class="protocols-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Notebook/Protocols'" type="button">Protocols</button></li>
-			<li class="interlab-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/InterLab'" type="button">Interlab</button></li>		
-			<li class="members-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Team/Profiles'" type="button">Members</button></li>
-			<li class="attributions-sub-li-mo"><button onclick="location.href='http://2017.igem.org/Team:Wageningen_UR/Attributions'" type="button">Attributions</button>
+    <div id="MobileMenu">
+        <ul id="MainMobileMenu">
+            <li class="MobileIcon-li-mo" class="button">
+                <img class="MobileIconMenu" src="./images/mobileicon.png" /></li>
+            <li>
+                <button class="project-li-mo">Project</button>
+            </li>
+            <li>
+                <button class="wet-lab-li-mo">Wet-lab</button>
+            </li>
+            <li>
+                <button class="model-li-mo">Model</button>
+            </li>
+            <li>
+                <button class="human-practices-li-mo">Human Practices</button>
+            </li>
+            <li>
+                <button class="notebook-li-mo">Notebook</button>
+            </li>
+            <li>
+                <button class="team-li-mo">Team</button>
+            </li>
         </ul>
-		</div>
 
- <!-- Javascripts at the buttom so page loads first, then scripts are run-->
-    <script>
+        <ul id="MobileSubMenu">
+            <li class="fill-sub-li-mo" class="button"></li>
+
+            <!-- Repeat Main menu Items-->
+            <li class="project-sub-li-mo">
+                <button onclick="location.href='./Project.html'" type="button">Project</button>
+            </li>
+            <li class="wet-lab-sub-li-mo">
+                <button onclick="location.href='./Wet_Lab/Wet_Lab.html'" type>Wet-lab</button>
+            </li>
+            <li class="model-sub-li-mo">
+                <button onclick="location.href='./Model.html'">Model</button>
+            </li>
+            <li class="human-practices-sub-li-mo">
+                <button onclick="location.href='./HP/Human_Practices.html'">Human Practices</button>
+            </li>
+            <li class="notebook-sub-li-mo">
+                <button onclick="location.href='./Notebook.html'">Notebook</button>
+            </li>
+            <li class="team-sub-li-mo">
+                <button onclick="location.href='./Team.html'">Team</button>
+            </li>
+
+            <!--Submenu Items-->
+            <li class="description-sub-li-mo">
+                <button onclick="location.href='./Description.html'" type="button">Description</button>
+            </li>
+            <li class="design-sub-li-mo">
+                <button onclick="location.href='./Design.html'" type="button">Design</button>
+            </li>
+            <li class="parts-sub-li-mo">
+                <button onclick="location.href='./Part_Collection.html'" type="button">Parts</button>
+            </li>
+            <li class="results-sub-li-mo">
+                <button onclick="location.href='./Results.html'" type="button">Results</button>
+            </li>
+            <li class="demo-sub-li-mo">
+                <button onclick="location.href='./Wet_Lab/Demo.html'" type="button">Demo</button>
+            </li>
+            <li class="kinetics-sub-li-mo">
+                <button onclick="location.href='./Model/Kinetics.html'" type="button">Kinetics</button>
+            </li>
+            <li class="qs-sub-li-mo">
+                <button onclick="location.href='./Model/QS.html'" type="button">Quorum Sensing</button>
+            </li>
+            <li class="integration-sub-li-mo">
+                <button onclick="location.href='./Model/Integration.html'" type="button"></button>Integration</button>
+            </li>
+            <li class="integrated-sub-li-mo">
+                <button onclick="location.href='./HP/Gold_Integrated.html'" type="button">Integrated</button>
+            </li>
+            <li class="scenario-sub-li-mo">
+                <button onclick="location.href='./HP/Rollout.html'" type="button">Scenario</button>
+            </li>
+            <li class="safety-sub-li-mo">
+                <button onclick="location.href='./HP/Silver.html'" type="button">Safety & Ethics</button>
+            </li>
+            <li class="outreach-sub-li-mo">
+                <button onclick="location.href='./HP/Outreach.html'" type="button">Outreach</button>
+            </li>
+            <li class="collaboration-sub-li-mo">
+                <button onclick="location.href='./Collaborations.html'" type="button">Collaborations</button>
+            </li>
+            <li class="protocols-sub-li-mo">
+                <button onclick="location.href='./Notebook/Protocols.html'" type="button">Protocols</button>
+            </li>
+            <li class="interlab-sub-li-mo">
+                <button onclick="location.href='./InterLab.html'" type="button">Interlab</button>
+            </li>
+            <li class="members-sub-li-mo">
+                <button onclick="location.href='/Team/Profiles.html'" type="button">Members</button>
+            </li>
+            <li class="attributions-sub-li-mo">
+                <button onclick="location.href='./Attributions.html'" type="button">Attributions</button>
+        </ul>
+    </div>
+
+    <!-- Javascripts at the buttom so page loads first, then scripts are run-->
+	<script>
         //javascript to display menu
 
         //Loads the document
