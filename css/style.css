@@ -177,6 +177,10 @@ html, body, #GlobalWrapper {
     /*width: 20%*/
 }
 
+.application-li {
+    /*width: 20%*/
+}
+
 .notebook-li {
     /*width: 13%*/
 }
@@ -303,12 +307,6 @@ a:focus {
     text-decoration: none;
 }
 
-.scenario-sub-nav-item {
-    font-size: 1.0rem;
-    color: black;
-    text-decoration: none;
-}
-
 .safety-sub-nav-item {
     font-size: 1.0rem;
     color: black;
@@ -316,6 +314,24 @@ a:focus {
 }
 
 .outreach-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.future-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.rollout-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.device-sub-nav-item {
     font-size: 1.0rem;
     color: black;
     text-decoration: none;
@@ -367,6 +383,10 @@ a:focus {
     display: none;
 }
 
+#application-sub {
+    display: none;
+}
+
 #notebook-sub {
     display: none;
 }
@@ -375,13 +395,25 @@ a:focus {
     display: none;
 }
 
-
 #breadcrumb-wrapper {
-
+	margin-right: auto;
+	margin-left: auto;
+	width:80%;
+	min-width: 800px;
+	max-width: 1024px;
+	display:block;
+	top:105px;
+	position:relative;
 }
+
+.breadcrumb {
+	position:relative;
+}
+
  /* Style the list */
 ul.breadcrumb {
-    padding: 10px 16px;
+	padding:0px;
+    padding-bottom: 10px;
     list-style: none;
     background-color: #FFFFFF;
 }
@@ -458,7 +490,7 @@ ul.breadcrumb li a:hover {
 .Center-Text-Column {
     position: relative;
     clear: both;
-    width: 60%;
+    width: 80%;
     min-width: 800px;
     max-width: 1024px;
     margin: auto;
@@ -468,6 +500,22 @@ ul.breadcrumb li a:hover {
 	margin-top: 4px;
 	margin-bottom: 4px;
 	font-size: 1.0rem;
+}
+
+.Textbox-Left {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: left;    
+}
+
+.Textbox-Right {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: right;   
 }
 
 .TextContent p {
@@ -502,7 +550,7 @@ ul.breadcrumb li a:hover {
 	margin: 0;
 	font-weight: 500;
 	line-height: 1.1;
-	font-size: 2.25rem;
+	font-size: 1.25rem;
 	overflow:hidden;
 	text-align: justify;
 	direction: ltr;
@@ -612,6 +660,45 @@ ul.breadcrumb li a:hover {
     list-style-position: inside;
 }
 
+/*Bootstrap accordion formatting*/
+#accordion {
+	box-sizing: border-box;
+    
+}
+
+/*Split page in top 90% and bottom 10% for down arrow*/
+#DownArrow {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 94%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+	opacity: 0.5;
+	z-index: 999;
+}
+
+#UpButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+	font-size:2rem;
+}
+
+#UpButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
 
 /*Mobile site elements*/
 #MobileMenu {
@@ -640,7 +727,7 @@ ul.breadcrumb li a:hover {
 }
 
 #MobileMenu ul li {	
-	height:14.28%;
+	height:12.5%;
 }
 
 #MobileMenu ul li button{
@@ -704,7 +791,7 @@ ul.breadcrumb li a:hover {
 }
 
 /*Align menu on the left when window is smaller*/
-@media (max-width: 1460px) {
+@media (max-width: 1210px) {
     /*whatever appears in the menu at the left either disappears or is now on top of the menu*/
     #TopMenuButtonWrapper {
         position: relative;
@@ -712,6 +799,7 @@ ul.breadcrumb li a:hover {
         width: 100%;
         float: right;
     }
+		
     .nav-item {
         font-size: 1.2rem;
     }
@@ -729,14 +817,19 @@ ul.breadcrumb li a:hover {
         padding-left:16px;
         float: right;
     }
+	
+	#breadcrumb-wrapper {
+		margin-left: 10px;
+	}
 }
 
 /*Mobile devices*/
-@media (max-width:940px) {
+@media (max-width: 720px) {
    
 	body, html { 
 	/*overflow-x:hidden; */
 	}
+		
 	
 	/*Hide normal menu*/
 	#MainMenu {
@@ -774,16 +867,20 @@ ul.breadcrumb li a:hover {
 	/*General formatting, making it smaller*/
 	.Center-Text-Column {
 		min-width: 0px;
+	}	
+	
+	#breadcrumb-wrapper {
+		display:none;
 	}
-    
+	
 }
 
-/*when screen is not mobile*/
-@media (min-width:941px) {
+/*when screen is no longer mobile*/
+@media (min-width:1210px) {
     /*Turn off mobile again*/
     #MainMenu {
 		display:inline;
-	}
+	}	
 	
 	.Center-Text-Column {
 		width: 80%;
@@ -796,24 +893,9 @@ ul.breadcrumb li a:hover {
     #MainMobileMenu {
         display:none;
 	}   
+	
+	#breadcrumb-wrapper {
+		margin-left: auto;
+	}
 }
 
-/*Bootstrap accordion formatting*/
-#accordion {
-	box-sizing: border-box;
-    
-}
-
-/*Split page in top 90% and bottom 10% for down arrow*/
-#DownArrow {
-    display: none;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 94%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
-	opacity: 0.5;
-	z-index: 999;
-}

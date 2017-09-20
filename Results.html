@@ -51,10 +51,11 @@
 
                 <div id="TopMenuButtonWrapper">
                     <ul>
-                        <li class="project-li"><a href="./Project/Project.html" class="project nav-item" id="project">Project</a></li>
-                        <li class="wet-lab-li"><a href="./Wet_Lab/Wet_Lab.html" class="wet-lab nav-item active" id="wet-lab">Wet-lab</a></li>
+                        <li class="project-li"><a href="./Project/Project.html" class="nav-item" id="project">Project</a></li>
+                        <li class="wet-lab-li"><a href="./Wet_Lab/Wet_Lab.html" class="nav-item active" id="wet-lab">Wet-lab</a></li>
                         <li class="model-li"><a href="./Model.html" class="model nav-item" id="model">Model</a></li>
-                        <li class="human-practices-li"><a href="./HP/Human_Practices.html" class="human practices nav-item" id="human-practices">Human Practices</a></li>
+                        <li class="human-practices-li"><a href="./HP/Human_Practices.html" class="nav-item" id="human-practices">Human Practices</a></li>
+						<li class="application-li"><a href="./Design.html" class="nav-item" id="application">Application</a></li>						
                         <li class="notebook-li"><a href="./Notebook.html" class="notebook nav-item" id="notebook">Notebook</a></li>
                         <li class="team-li"><a href="./Team.html" class="team nav-item" id="team">Team</a></li>
                     </ul>
@@ -65,20 +66,12 @@
             <!-- TopMenu -->
 
             <div id="SubMenu">
-				
-				<div id="breadcrumb-wrapper">
-					<ul class="breadcrumb">
-						<li><a href="./index.html">Home</a></li>				
-						<li>Results</li>
-					</ul> 
-				</div>
-				<!--breadcrumb-wrapper -->
-				
-				<div id="SubMenuButtonWrapper">					
+
+                <div id="SubMenuButtonWrapper">
 
                     <ul id="project-sub">
                         <li><a href="./Description.html" class="description-sub-nav-item">Description</a></li>
-                        <li><a href="./Design.html" class="design-sub-nav-item">Design</a></li>
+                        <li><a href="./Project/ProjectDesign.html" class="design-sub-nav-item">Design</a></li>
                         <li><a href="./Project/Summary.html" class="summary-sub-nav-item">Summary</a></li>
                         <li><a href="./Project/Achievements.html" class="achievements-sub-nav-item">Achievements</a></li>
                     </ul>
@@ -94,10 +87,15 @@
                     </ul>
 
                     <ul id="human-practices-sub">
-                        <li><a href="./HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>
-                        <li><a href="./HP/Rollout.html" class="scenario-sub-nav-item">Roll-out Plan</a></li>
+                        <li><a href="./HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>                        
                         <li><a href="./HP/Silver.html" class="safety-sub-nav-item">Safety & Ethics</a></li>
-                        <li><a href="./HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>
+						<li><a href="./HP/Future.html" class="future-sub-nav-item">Future Perspectives</a></li>
+                        <li><a href="./HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>						
+                    </ul>
+					
+					<ul id="application-sub">
+						<li><a href="./Application/Rollout.html" class="rollout-sub-nav-item">Roll-out Plan</a></li>
+                        <li><a href="./Application/Device.html" class="device-sub-nav-item">Device</a></li>
                     </ul>
 
                     <ul id="notebook-sub">
@@ -120,7 +118,15 @@
         </div>
         <!-- MainMenu -->
 		
-		
+		<div id="breadcrumb-wrapper">
+			<ul class="breadcrumb">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./Wet_Lab/Wet_Lab.html">Wet-Lab</a></li>				
+				<li>Results</li>
+			</ul> 
+		</div>
+		<!--breadcrumb-wrapper -->
+				
        <div class="clearer"></div>
        <div id="Center-Text-Column-wrapper">
             <div class="container Center-Text-Column">
@@ -246,10 +252,13 @@
                     </div>
                     <!-- ResultsTest -->
                 </div>
-<!-- Bootstrap row -->
+				<!-- Bootstrap row -->
 
-        <div id="Footer">
-            <p>iGEM Wageningen UR 2017. Send us an <a href="mailto:igemwageningen@gmail.com " class="soft_link ">email</a> or follow us on <a class="soft_link " href="http://www.facebook.com/iGEMWageningen " target="_blank ">Facebook</a>
+        <!-- Buttom that makes you go back to top -->
+		<button onclick="topFunction()" id="UpButton" title="Go to top">🡹</button> 		
+        
+		<div id="Footer">
+            <p>iGEM Wageningen UR 2017. Send us an <a href="mailto:igemwageningen@gmail.com" class="soft_link">email</a> or follow us on <a class="soft_link" href="http://www.facebook.com/iGEMWageningen" target="_blank">Facebook</a>
             </p>
         </div>
         <!-- Footer -->
@@ -257,111 +266,59 @@
     </div>
     <!-- GlobalWrapper -->
 
-    <!-- Mobile site menu -->
+		<!-- Mobile site menu -->
+	<div id="MobileMenu">
+		<ul id="MainMobileMenu">
+			<li class="MobileIcon-li-mo" class="button">
+				<img class="MobileIconMenu" src="./images/mobileicon.png"/></li>
+			<li><button class="project-li-mo">Project</button></li>
+            <li><button class="wet-lab-li-mo">Wet-lab</button></li>
+            <li><button class="model-li-mo">Model</button></li>
+            <li><button class="human-practices-li-mo">Human Practices</button></li>
+			<li><button class="application-li-mo">Application</button></li>
+            <li><button class="notebook-li-mo">Notebook</button></li>
+            <li><button class="team-li-mo">Team</button></li>
+		</ul>
 
-    <div id="MobileMenu">
-        <ul id="MainMobileMenu">
-            <li class="MobileIcon-li-mo" class="button">
-                <img class="MobileIconMenu" src="./images/mobileicon.png" /></li>
-            <li>
-                <button class="project-li-mo">Project</button>
-            </li>
-            <li>
-                <button class="wet-lab-li-mo">Wet-lab</button>
-            </li>
-            <li>
-                <button class="model-li-mo">Model</button>
-            </li>
-            <li>
-                <button class="human-practices-li-mo">Human Practices</button>
-            </li>
-            <li>
-                <button class="notebook-li-mo">Notebook</button>
-            </li>
-            <li>
-                <button class="team-li-mo">Team</button>
-            </li>
+		<ul id="MobileSubMenu">
+			<li class="fill-sub-li-mo" class="button"></li>
+
+			<!-- Repeat Main menu Items-->			
+			<li class="project-sub-li-mo"><button onclick="location.href='./Project/Project.html'" type="button">Project</button></li>
+            <li class="wet-lab-sub-li-mo"><button onclick="location.href='./Wet-lab/Wet-lab.html'" type >Wet-lab</button></li>
+            <li class="model-sub-li-mo"><button onclick="location.href='./Model/Model.html'" >Model</button></li>
+            <li class="human-practices-sub-li-mo"><button onclick="location.href='/Human_Practices.html'" >Human Practices</button></li>
+            <li class="application-sub-li-mo"><button onclick="location.href='./Design.html'" >Application</button></li>            
+			<li class="notebook-sub-li-mo"><button onclick="location.href='./Notebook/Protocols.html'" >Notebook</button></li>
+            <li class="team-sub-li-mo"><button onclick="location.href='./Team.html'" >Team</button></li>
+
+			<!--Submenu Items-->		
+			<li class="description-sub-li-mo"><button onclick="location.href='./description.html'" type="button">Description</button></li>
+            <li class="design-sub-li-mo"><button onclick="location.href='./Project/ProjectDesign.html'" type="button">Design</button></li>
+			<li class="summary-sub-li-mo"><button onclick="location.href='./Project/Summary.html'" type="button">Summary</button></li>
+			<li class="achievements-sub-li-mo"><button onclick="location.href='./Project/Achievements.html'" type="button">Achievements</button></li>
+            <li class="parts-sub-li-mo"><button onclick="location.href='./Results/Part_Collection.html'" type="button">Parts</button></li>
+            <li class="results-sub-li-mo"><button onclick="location.href='./Results.html'" type="button">Results</button></li>
+			<li class="demo-sub-li-mo"><button onclick="location.href='./Results/Demo.html'" type="button">Demo</button></li>	
+			<li class="kinetics-sub-li-mo"><button onclick="location.href='./Model/Kinetics.html'" type="button">Kinetics</button></li>
+			<li class="qs-sub-li-mo"><button onclick="location.href='./Model/QS.html'" type="button">Quorum Sensing</button></li>
+			<li class="integration-sub-li-mo"><button onclick="location.href='/Model/Integration.html'" type="button"></button>Integration</button></li>
+			<li class="integrated-sub-li-mo"><button onclick="location.href='./HP/Gold_Integrated.html'" type="button">Integrated HP</button></li>
+			<li class="safety-sub-li-mo"><button onclick="location.href='./Safety.html'" type="button">Safety & Ethics</button></li>
+			<li class="future-sub-li-mo"><button onclick="location.href='./Future.html'" type="button">Future Perspectives</button></li>
+			<li class="outreach-sub-li-mo"><button onclick="location.href='./Outreach.hml'" type="button">Outreach</button></li>			
+			<li class="rollout-sub-li-mo"><button onclick="location.href='./Application/Rollout.html'" type="button">Rollout Plan</button></li>
+			<li class="device-sub-li-mo"><button onclick="location.href='./Application/Device.html'" type="button">Device</button></li>
+			<li class="collaboration-sub-li-mo"><button onclick="location.href='./Collaborations.html'" type="button">Collaborations</button></li>
+			<li class="protocols-sub-li-mo"><button onclick="location.href='./Notebook/Protocols.html'" type="button">Protocols</button></li>
+			<li class="interlab-sub-li-mo"><button onclick="location.href='./InterLab.html'" type="button">Interlab</button></li>		
+			<li class="members-sub-li-mo"><button onclick="location.href='./Team/Profiles.html'" type="button">Members</button></li>
+			<li class="attributions-sub-li-mo"><button onclick="location.href=./Attributions.html'" type="button">Attributions</button>
         </ul>
+		</div>
 
-        <ul id="MobileSubMenu">
-            <li class="fill-sub-li-mo" class="button"></li>
-
-            <!-- Repeat Main menu Items-->
-            <li class="project-sub-li-mo">
-                <button onclick="location.href='./Project.html'" type="button">Project</button>
-            </li>
-            <li class="wet-lab-sub-li-mo">
-                <button onclick="location.href='./Wet_Lab/Wet_Lab.html'" type>Wet-lab</button>
-            </li>
-            <li class="model-sub-li-mo">
-                <button onclick="location.href='./Model.html'">Model</button>
-            </li>
-            <li class="human-practices-sub-li-mo">
-                <button onclick="location.href='./HP/Human_Practices.html'">Human Practices</button>
-            </li>
-            <li class="notebook-sub-li-mo">
-                <button onclick="location.href='./Notebook.html'">Notebook</button>
-            </li>
-            <li class="team-sub-li-mo">
-                <button onclick="location.href='./Team.html'">Team</button>
-            </li>
-
-            <!--Submenu Items-->
-            <li class="description-sub-li-mo">
-                <button onclick="location.href='./Description.html'" type="button">Description</button>
-            </li>
-            <li class="design-sub-li-mo">
-                <button onclick="location.href='./Design.html'" type="button">Design</button>
-            </li>
-            <li class="parts-sub-li-mo">
-                <button onclick="location.href='./Part_Collection.html'" type="button">Parts</button>
-            </li>
-            <li class="results-sub-li-mo">
-                <button onclick="location.href='./Results.html'" type="button">Results</button>
-            </li>
-            <li class="demo-sub-li-mo">
-                <button onclick="location.href='./Wet_Lab/Demo.html'" type="button">Demo</button>
-            </li>
-            <li class="kinetics-sub-li-mo">
-                <button onclick="location.href='./Model/Kinetics.html'" type="button">Kinetics</button>
-            </li>
-            <li class="qs-sub-li-mo">
-                <button onclick="location.href='./Model/QS.html'" type="button">Quorum Sensing</button>
-            </li>
-            <li class="integration-sub-li-mo">
-                <button onclick="location.href='./Model/Integration.html'" type="button"></button>Integration</button>
-            </li>
-            <li class="integrated-sub-li-mo">
-                <button onclick="location.href='./HP/Gold_Integrated.html'" type="button">Integrated</button>
-            </li>
-            <li class="scenario-sub-li-mo">
-                <button onclick="location.href='./HP/Rollout.html'" type="button">Scenario</button>
-            </li>
-            <li class="safety-sub-li-mo">
-                <button onclick="location.href='./HP/Silver.html'" type="button">Safety & Ethics</button>
-            </li>
-            <li class="outreach-sub-li-mo">
-                <button onclick="location.href='./HP/Outreach.html'" type="button">Outreach</button>
-            </li>
-            <li class="collaboration-sub-li-mo">
-                <button onclick="location.href='./Collaborations.html'" type="button">Collaborations</button>
-            </li>
-            <li class="protocols-sub-li-mo">
-                <button onclick="location.href='./Notebook/Protocols.html'" type="button">Protocols</button>
-            </li>
-            <li class="interlab-sub-li-mo">
-                <button onclick="location.href='./InterLab.html'" type="button">Interlab</button>
-            </li>
-            <li class="members-sub-li-mo">
-                <button onclick="location.href='/Team/Profiles.html'" type="button">Members</button>
-            </li>
-            <li class="attributions-sub-li-mo">
-                <button onclick="location.href='./Attributions.html'" type="button">Attributions</button>
-        </ul>
-    </div>
-
-    <!-- Javascripts at the buttom so page loads first, then scripts are run-->
-	<script>
+ <!-- Javascripts at the buttom so page loads first, then scripts are run-->
+    <script>
         //javascript to display menu
 
         //Loads the document
@@ -383,7 +340,6 @@
 				
 			});
 			
-
 			//close when clicking outside the mobile menu
 			$("#MobileSubMenu").click(function() {
 				$("#MobileMenu").hide();
@@ -406,9 +362,12 @@
 				$(".human-practices-sub-li-mo").hide();	
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
 				$(".outreach-sub-li-mo").hide();
+				$(".future-sub-li-mo").hide();				
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();
 				$(".collaboration-sub-li-mo").hide();
 				$(".protocols-sub-li-mo").hide();
@@ -421,6 +380,7 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","white");							
 			});
@@ -446,10 +406,13 @@
 				$(".qs-sub-li-mo").hide();
 				$(".human-practices-sub-li-mo").hide();	
 				$(".integration-sub-li-mo").hide();
-				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
+				$(".integrated-sub-li-mo").hide();				
 				$(".safety-sub-li-mo").hide();
 				$(".outreach-sub-li-mo").hide();
+				$(".future-sub-li-mo").hide();				
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();
 				$(".collaboration-sub-li-mo").hide();
 				$(".protocols-sub-li-mo").hide();
@@ -462,6 +425,7 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","white");
 			});  
@@ -487,9 +451,12 @@
 				$(".human-practices-sub-li-mo").hide();	
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
 				$(".outreach-sub-li-mo").hide();
+				$(".future-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".application-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();
 				$(".collaboration-sub-li-mo").hide();
 				$(".protocols-sub-li-mo").hide();
@@ -502,6 +469,7 @@
 				$(".wet-lab-li-mo").css("background","lightblue");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","white");
 			}); 
@@ -527,9 +495,12 @@
 				$(".human-practices-sub-li-mo").hide();					
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
 				$(".outreach-sub-li-mo").hide();
+				$(".future-sub-li-mo").hide();				
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();
 				$(".collaboration-sub-li-mo").hide();
 				$(".protocols-sub-li-mo").hide();
@@ -542,6 +513,7 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","lightblue");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","white");
 			}); 
@@ -565,10 +537,13 @@
 
 				$(".human-practices-sub-li-mo").toggle();
 				$(".integrated-sub-li-mo").toggle();
-				$(".scenario-sub-li-mo").toggle();
 				$(".safety-sub-li-mo").toggle();
-				$(".outreach-sub-li-mo").toggle();
-
+				$(".future-sub-li-mo").toggle();
+				$(".outreach-sub-li-mo").toggle();				
+				
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();				
 				$(".collaboration-sub-li-mo").hide();
 				$(".protocols-sub-li-mo").hide();
@@ -581,10 +556,54 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","lightblue");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","white");
 			}); 
 
+			$(".application-li-mo").click(function() {				
+				$("#MobileSubMenu").show();
+				$(".fill-sub-li-mo").show();
+
+				$(".project-sub-li-mo").hide();
+				$(".description-sub-li-mo").hide();
+				$(".design-sub-li-mo").hide();
+				$(".summary-sub-li-mo").hide();		
+				$(".achievements-sub-li-mo").hide();
+				$(".wet-lab-sub-li-mo").hide();
+				$(".parts-sub-li-mo").hide();
+				$(".results-sub-li-mo").hide();				
+				$(".demo-sub-li-mo").hide();
+				$(".model-sub-li-mo").hide();				
+				$(".kinetics-sub-li-mo").hide();
+				$(".qs-sub-li-mo").hide();
+				$(".human-practices-sub-li-mo").hide();
+				$(".integrated-sub-li-mo").hide();
+				$(".safety-sub-li-mo").hide();
+				$(".outreach-sub-li-mo").hide();;				
+				$(".future-sub-li-mo").hide();
+				
+				$(".application-sub-li-mo").toggle();
+				$(".rollout-sub-li-mo").toggle();
+				$(".device-sub-li-mo").toggle();
+
+				$(".notebook-sub-li-mo").hide();				
+				$(".collaboration-sub-li-mo").hide();
+				$(".protocols-sub-li-mo").hide();
+				$(".interlab-sub-li-mo").hide();
+				$(".team-sub-li-mo").hide();
+				$(".members-sub-li-mo").hide();
+				$(".attributions-sub-li-mo").hide();	
+
+				$(".project-li-mo").css("background","white");
+				$(".wet-lab-li-mo").css("background","white");
+				$(".model-li-mo").css("background","white");
+				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","lightblue");
+				$(".notebook-li-mo").css("background","white");
+				$(".team-li-mo").css("background","white");
+			}); 
+			
 			$(".notebook-li-mo").click(function() {				
 				$("#MobileSubMenu").show();
 				$(".fill-sub-li-mo").show();
@@ -603,9 +622,12 @@
 				$(".qs-sub-li-mo").hide();
 				$(".human-practices-sub-li-mo").hide();			
 				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
 				$(".outreach-sub-li-mo").hide();
+				$(".future-sub-li-mo").hide();
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();
 
 				$(".notebook-sub-li-mo").toggle();				
 				$(".collaboration-sub-li-mo").toggle();
@@ -620,6 +642,7 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","lightblue");
 				$(".team-li-mo").css("background","white");
 
@@ -643,9 +666,12 @@
 				$(".qs-sub-li-mo").hide();		
 				$(".human-practices-sub-li-mo").hide();		
 				$(".integrated-sub-li-mo").hide();
-				$(".scenario-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();								
+				$(".outreach-sub-li-mo").hide();	
+				$(".future-sub-li-mo").hide();
+				$(".application-sub-li-mo").hide();
+				$(".rollout-sub-li-mo").hide();
+				$(".device-sub-li-mo").hide();				
 				$(".collaboration-sub-li-mo").hide();
 				$(".notebook-sub-li-mo").hide();	
 				$(".protocols-sub-li-mo").hide();
@@ -659,6 +685,7 @@
 				$(".wet-lab-li-mo").css("background","white");
 				$(".model-li-mo").css("background","white");
 				$(".human-practices-li-mo").css("background","white");
+				$(".application-li-mo").css("background","white");
 				$(".notebook-li-mo").css("background","white");
 				$(".team-li-mo").css("background","lightblue");
 
@@ -676,7 +703,6 @@
 
             //mouseovers to make main menu active
             $("#project").on("mouseover", function() {
-
 			clearTimeout(timer);
             timer = setTimeout(function () {
 				clearTimeout(timer);
@@ -686,6 +712,7 @@
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","none");
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -693,6 +720,7 @@
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
                 $("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -706,7 +734,7 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -726,7 +754,8 @@
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","underline");
                 $("#model").css("text-decoration","none");
-                $("#human-practices").css("text-decoration","none");
+                $("#human-practices").css("text-decoration","none");				
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -734,6 +763,7 @@
                 $("#project-sub").hide();
                 $("#model-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
                 $("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -747,7 +777,7 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -763,12 +793,13 @@
 				clearTimeout(timer);
 				timer = setTimeout(function () {
 				clearTimeout(timer); 
-				delay = 400;
+				delay = 300;
                 $("#model-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","underline");
-                $("#human-practices").css("text-decoration","none");
+                $("#human-practices").css("text-decoration","none");								
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -776,6 +807,7 @@
                 $("#project-sub").hide();
                 $("#wet-lab-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
                 $("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -789,7 +821,7 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -811,6 +843,7 @@
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","underline")
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -818,6 +851,7 @@
                 $("#project-sub").hide();
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
                 $("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -831,7 +865,7 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -842,25 +876,27 @@
                 }, delay);
 
             });
-
-            $("#notebook").on("mouseover", function() {
+			
+			$("#application").on("mouseover", function() {
 				clearTimeout(timer);
-            timer = setTimeout(function () {
+				timer = setTimeout(function () {
 				clearTimeout(timer);
-				delay = 600;
-                $("#notebook-sub").show();
+				delay = 400;
+				$("#application-sub").show();
                 $("#project").css("text-decoration","none");
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","none");
-                $("#notebook").css("text-decoration","underline")
+				$("#application").css("text-decoration","underline")
+                $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
                 //Switching menu button, clear everything else
                 $("#project-sub").hide();
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
-                $("#human-practices-sub").hide();
+				$("#human-practices-sub").hide();
+                $("#notebook-sub").hide();
                 $("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
                 $(".design-sub-nav-item").css("font-weight","normal");
@@ -873,7 +909,52 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".safety-sub-nav-item").css("font-weight","normal");
+                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".collaboration-sub-nav-item").css("font-weight","normal");
+                $(".protocols-sub-nav-item").css("font-weight","normal");
+                $(".interlab-sub-nav-item").css("font-weight","normal");
+                $(".members-sub-nav-item").css("font-weight","normal");
+                $(".attributions-sub-nav-item").css("font-weight","normal");
+                }, delay);
+
+            });
+
+			
+            $("#notebook").on("mouseover", function() {
+				clearTimeout(timer);
+            timer = setTimeout(function () {
+				clearTimeout(timer);
+				delay = 600;
+                $("#notebook-sub").show();
+                $("#project").css("text-decoration","none");
+                $("#wet-lab").css("text-decoration","none");
+                $("#model").css("text-decoration","none");
+                $("#human-practices").css("text-decoration","none");
+				$("#application").css("text-decoration","none");
+                $("#notebook").css("text-decoration","underline")
+                $("#team").css("text-decoration","none");
+
+                //Switching menu button, clear everything else
+                $("#project-sub").hide();
+                $("#wet-lab-sub").hide();
+                $("#model-sub").hide();
+                $("#human-practices-sub").hide();
+				$("#application-sub").hide();
+                $("#team-sub").hide();
+                $(".description-sub-nav-item").css("font-weight","normal");
+                $(".design-sub-nav-item").css("font-weight","normal");
+				$(".summary-sub-nav-item").css("font-weight","normal");
+				$(".achievements-sub-nav-item").css("font-weight","normal");
+                $(".parts-sub-nav-item").css("font-weight","normal");
+                $(".results-sub-nav-item").css("font-weight","normal");
+                $(".demo-sub-nav-item").css("font-weight","normal");
+                $(".kinetics-sub-nav-item").css("font-weight","normal");
+                $(".qs-sub-nav-item").css("font-weight","normal");
+                $(".integration-sub-nav-item").css("font-weight","normal");
+                $(".integrated-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -895,6 +976,7 @@
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","none");
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","underline");
 
@@ -903,6 +985,7 @@
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
                 $(".design-sub-nav-item").css("font-weight","normal");
@@ -915,7 +998,7 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
+                $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -1005,35 +1088,48 @@
             $(".integrated-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","bold");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
+				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
-            $(".scenario-sub-nav-item").on("mouseover", function() {
-				clearTimeout(timer);
-                $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","bold");
-                $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
-            });
 
             $(".safety-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","bold");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
+				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
             $(".outreach-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","bold");
+				$(".future-sub-nav-item").css("font-weight","normal");
+            });
+			
+			 $(".future-sub-nav-item").on("mouseover", function() {
+				clearTimeout(timer);
+                $(".integrated-sub-nav-item").css("font-weight","normal");
+                $(".safety-sub-nav-item").css("font-weight","normal");
+                $(".outreach-sub-nav-item").css("font-weight","normal");
+				$(".future-sub-nav-item").css("font-weight","bold");
             });
 
+			$(".device-sub-nav-item").on("mouseover", function() {
+				clearTimeout(timer);
+                $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","bold");
+            });
+						
+            $(".rollout-sub-nav-item").on("mouseover", function() {
+				clearTimeout(timer);
+                $(".rollout-sub-nav-item").css("font-weight","bold");
+                $(".device-sub-nav-item").css("font-weight","normal");
+            });
+			
             $(".collaboration-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".collaboration-sub-nav-item").css("font-weight","bold");
@@ -1087,6 +1183,7 @@
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","none");
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -1095,6 +1192,7 @@
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
 				$("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -1108,10 +1206,12 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
-                $(".collaboration-sub-nav-item").css("font-weight","normal");
+                $(".future-sub-nav-item").css("font-weight","normal");
+				$(".rollout-sub-nav-item").css("font-weight","normal");
+				$(".device-sub-nav-item").css("font-weight","normal");
+				$(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
                 $(".members-sub-nav-item").css("font-weight","normal");
@@ -1119,9 +1219,6 @@
                 }, delay);
 
             });
-
-                
-            
 
 			//Reset submenu selection after hovering over FrontPage or CenterTextColumnWraooer
 			$("#Center-Text-Column-wrapper").on("mouseover", function() {
@@ -1135,6 +1232,7 @@
                 $("#wet-lab").css("text-decoration","none");
                 $("#model").css("text-decoration","none");
                 $("#human-practices").css("text-decoration","none");
+				$("#application").css("text-decoration","none");
                 $("#notebook").css("text-decoration","none");
                 $("#team").css("text-decoration","none");
 
@@ -1143,6 +1241,7 @@
                 $("#wet-lab-sub").hide();
                 $("#model-sub").hide();
                 $("#human-practices-sub").hide();
+				$("#application-sub").hide();
                 $("#notebook-sub").hide();
 				$("#team-sub").hide();
                 $(".description-sub-nav-item").css("font-weight","normal");
@@ -1156,10 +1255,12 @@
                 $(".qs-sub-nav-item").css("font-weight","normal");
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
-                $(".scenario-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
-                $(".collaboration-sub-nav-item").css("font-weight","normal");
+                $(".future-sub-nav-item").css("font-weight","normal");
+				$(".rollout-sub-nav-item").css("font-weight","normal");
+				$(".device-sub-nav-item").css("font-weight","normal");
+				$(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
                 $(".members-sub-nav-item").css("font-weight","normal");
@@ -1239,6 +1340,24 @@
 
         });
 
+		//Scroll button
+		// When the user scrolls down 400px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				document.getElementById("UpButton").style.display = "block";
+			} else {
+				document.getElementById("UpButton").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Chrome, Safari and Opera
+			document.documentElement.scrollTop = 0; // For IE and Firefox
+		} 
+		
 	</script>
 
 </body>
