@@ -1,0 +1,108 @@
+/*format the main front page*/
+#FrontPage {
+	position:relative;
+    top: 105px;
+	height: calc(100% - 105px);
+	/* Opera */
+    height: -o-calc(100% - 105px);
+    /* Firefox */
+    height: -moz-calc(100% - 105px);
+    /* WebKit */
+    height: -webkit-calc(100% - 105px);
+    /* Opera */
+    height: -o-calc(100% - 105px);
+    /* Standard */
+    height: calc(100% - 105px); 
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.FrontpageTitle {	
+	
+}
+
+#ProjectImage {
+    height: 100%;
+    width: 100%;
+}
+
+#ProjectImage img {
+    width: 100%;
+    height: 100%;
+}
+
+/*General formatting for content */
+#Center-Text-Column-wrapper {
+    position:relative;
+    top: 105px;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.Center-Text-Column {
+    position: relative;
+    clear: both;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.Textbox {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+}
+
+.Textbox-Left {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: left;    
+}
+
+.Textbox-Right {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: right;   
+}
+
+.TextContent p {
+    text-align: left;
+    vertical-align: baseline;
+    font-size: 1.0rem;
+    font-family: roboto, sans-serif;
+	color: #141823;
+    margin-bottom: 1.2rem;
+}
+
+.TextContent h1 {
+    font-size: 3.125rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;    
+	color: #3399ff;
+	text-align: left;
+}
+
+.TextContent h2 {
+	font-size: 2.25rem;
+    line-height: 1.6;
+    text-align: left;
+	color: #141823;
+}
+
+
+/*Mobile devices*/
+@media (max-width: 800px) {
+		
+	/*General formatting, making it smaller*/
+	.Center-Text-Column {
+		min-width: 0px;
+	}		
+}

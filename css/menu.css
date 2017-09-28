@@ -1,0 +1,602 @@
+/*Override default CSS*/
+
+#MobileMenu {
+	display:none;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+    z-index: 1;
+}
+
+#sideMenu, #top_title {
+    display: none;
+}
+
+#content {
+    padding: 0px;
+    width: 100%;
+    margin-top: -7px;
+    margin-left: 0px;
+    background-color: transparent;
+}
+
+#MainMenu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 105px;
+	z-index: 999;
+}
+
+#TopMenu {
+    height: 65%;
+    width: 100%;    
+    background-color: #006838;
+}
+
+#MenuIcon {
+    position:relative;
+    height:100%;
+    left:12.5%;
+}
+
+#MenuIcon img {
+    height:100%;
+}
+
+#TopMenuButtonWrapper {
+    position: fixed;
+    width: 65%;
+    height: 68px;
+    top: 0;
+    right: 0;
+}
+
+#TopMenuButtonWrapper ul {
+    list-style: none;
+    height: 100%;
+}
+
+#TopMenuButtonWrapper ul li {
+    display: inline;
+    float: left;
+    text-decoration: none;
+}
+
+#TopMenuButtonWrapper ul li a {        
+    height:50%;
+    margin-top:22.5px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+	color:white;
+    /*line-height: 100px;	*/
+}
+
+#TopMenuButtonWrapper ul li  a:hover, a:active {
+	/*color: #ECEBEC; color doesn't look nice for hover only*/
+	text-decoration: none;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#SubMenu {
+    height: 35%;
+    width: 100%;
+	background-color:#FFFFFF;   
+}
+
+#SubMenuButtonWrapper {
+    position: fixed;
+    height: 36.75px;
+    width: 65%;
+    top: 68px;
+    right: 0;
+}
+
+#SubMenuButtonWrapper ul {
+    list-style: none;
+    height: 100%;
+}
+
+#SubMenuButtonWrapper ul li {
+    float: left;
+}
+
+#SubMenuButtonWrapper ul li a {
+    padding-right: 30px;
+    /*display:block;*/
+    height: 36.75px;
+    /*line-height: 36px;	*/	
+	color:black;
+    display: flex;
+    align-items: center;
+}
+
+#SubMenuButtonWrapper ul li a:hover, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+/*Formatting for all main menu elements*/
+.sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.description-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.design-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.summary-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.achievements-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.results-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.parts-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.demo-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.kinetics-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.qs-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.integration-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.integrated-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.safety-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.outreach-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.future-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.rollout-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.device-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.collaboration-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.protocols-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.interlab-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.members-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+.attributions-sub-nav-item {
+    font-size: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+#project-sub {
+    display: none;
+}
+
+#wet-lab-sub {
+    display: none;
+}
+
+#model-sub {
+    display: none;
+}
+
+#human-practices-sub {
+    display: none;
+}
+
+#application-sub {
+    display: none;
+}
+
+#notebook-sub {
+    display: none;
+}
+
+#team-sub {
+    display: none;
+}
+
+#breadcrumb-wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width:80%;
+	min-width: 800px;
+	max-width: 1024px;
+	display:block;
+	top:105px;
+	position:relative;
+}
+
+.breadcrumb {
+	position:relative;
+}
+
+ /* Style the list */
+ul.breadcrumb {
+	padding:0px;
+    padding-bottom: 10px;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+	font-size: 1.2rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+} 
+
+.clearer {
+    clear: both;
+}
+
+
+#Footer {
+	top:105px;
+	position:relative;
+	bottom: 0;
+	clear: both;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height:48px;
+	background-color: #FFFFFF;
+}
+
+#Footer p {	
+	border-top: 1px solid #aaa;
+	margin-top: 32px;
+	margin-bottom: 0px;
+    vertical-align: baseline;
+    font-family: roboto, sans-serif;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 0.7rem;
+}
+
+.clearer {
+    clear: both;
+}
+
+/*Split page in top 90% and bottom 10% for down arrow*/
+#DownArrow {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 94%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+	opacity: 0.5;
+	z-index: 999;
+}
+
+#UpButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+	font-size:2rem;
+}
+
+#UpButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*Mobile site elements*/
+#MobileMenu {
+	display:none;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+    z-index: 3;
+}
+
+#MobileMenu ul {
+	overflow:hidden;
+	height:100%;
+	width:50%;	
+    float:left;
+}
+
+#MainMobileMenu {
+    display:none;
+}
+
+#MobileSubMenu {
+}
+
+#MobileMenu ul li {	
+	height:12.5%;
+}
+
+#MobileMenu ul li button{
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/
+	display: inline;    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;	
+	text-decoration:none;
+}
+
+#MobileSubMenu li {	
+	display:none;    	
+}
+
+#MobileMenu ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+	height:100%;
+	width:100%;
+	border: 1px solid black;	
+	background:white;
+    color:black;
+	/*border: 1px solid #141823;;*/    
+	text-align: center;
+	font-size:4.0vw;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.MobileIconGlobal {
+    display:none;
+	position:fixed;
+    top: 0;
+    cursor:pointer;   
+	height:110px;
+	z-index:1;
+	background-color:white;
+}
+	
+.MobileIconGlobal  img {
+    z-index:999;
+    height:100%;
+}
+
+.MobileIcon-li-mo img {
+    z-index:999;
+    height:100%;
+	width:auto;
+    cursor:pointer;
+}
+
+.MobileIconMenu {		
+	background-color:white;
+	height: 100%;
+}
+
+
+/*Align menu on the left when window is smaller*/
+@media (max-width: 1220px) {
+    /*whatever appears in the menu at the left either disappears or is now on top of the menu*/
+    #TopMenuButtonWrapper {
+        position: relative;
+        padding-left:16px;
+        width: 100%;
+        float: right;
+    }
+
+    #MenuIcon {
+        display:none;
+    }
+		
+    .nav-item {
+        font-size: 1.2rem;
+    }
+    #TopMenuButtonWrapper ul li {
+        float: left;
+    }
+    #TopMenuButtonWrapper ul li a {
+        padding-right: 16px;
+    }
+    
+    #SubMenuButtonWrapper {
+        width: 100%;       
+        padding-left:16px;
+        float: right;
+    }
+	
+	#breadcrumb-wrapper {
+		margin-left: 10px;
+	}		
+	
+}
+
+/*Mobile devices*/
+@media (max-width: 800px) {
+   
+	body, html { 
+	/*overflow-x:hidden; */	
+    -webkit-text-size-adjust: none;
+	}
+		
+	
+	/*Hide normal menu*/
+	#MainMenu {
+		display:none;
+	}
+	
+	/*Do stuff with mobile*/	
+	.MobileIconGlobal {
+        display:inline;	
+		width:100%;
+	}
+		
+    #TopMenuButtonWrapper {
+        position: relative;
+        padding-left:16px;
+        width: 100%;
+        float: right;
+    }
+    
+    #TopMenuButtonWrapper ul {
+        display:none;
+    }
+      
+    
+    #SubMenuButtonWrapper ul {
+        display:none;
+    }
+		
+	#breadcrumb-wrapper {
+		display:none;
+	}	
+}
+
+/*when screen is no longer mobile*/
+@media (min-width:1220px) {
+    /*Turn off mobile again*/
+    #MainMenu {
+		display:inline;
+	}	
+	
+	.Center-Text-Column {
+		width: 80%;
+	}
+
+    #MobileMenu {
+        display:none;		
+	}
+
+    #MainMobileMenu {
+        display:none;
+	}   
+	
+	#breadcrumb-wrapper {
+		margin-left: auto;
+	}	
+}
+
+
+

@@ -1,0 +1,17 @@
+.Button-Wrapper {
+    width:100%;
+}
+
+.FourButton {
+    position:relative;
+    height:80px;
+    width:20%;
+    margin-left:4%;
+    display:inline;
+    float:left;
+}
+
+.FourButton img {
+    width:100%;
+    height:auto;
+}

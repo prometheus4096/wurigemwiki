@@ -1,0 +1,355 @@
+/*General formatting for content */
+#Center-Text-Column-wrapper {
+    position:relative;
+    top: 105px;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.Center-Text-Column {
+    position: relative;
+    clear: both;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.Textbox {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+}
+
+.Textbox-Left {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: left;    
+}
+
+.Textbox-Right {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: right;   
+}
+
+.TextContent p {
+    text-align: left;
+    vertical-align: baseline;
+    font-size: 1.0rem;
+    font-family: roboto, sans-serif;
+	color: #141823;;
+    margin-bottom: 1.2rem;
+}
+
+.TextContent h1 {
+    font-size: 3.125rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;    
+	color: #3399ff;
+	text-align: left;
+}
+
+.TextContent h2 {
+	font-size: 2.25rem;
+    line-height: 1.6;
+    text-align: left;
+	color: #141823;;
+}
+
+/*Accordion box formatting*/
+/*Accordion panel heading text formatting*/
+.panel-heading h4 {
+	padding-top: .5rem;
+	padding-bottom: .17rem;
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.1;
+	font-size: 1.25rem;
+	overflow:hidden;
+	text-align: justify;
+	direction: ltr;
+}
+
+.Summary-Box {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin: auto;
+    width: 85%;    
+    border: 1.5px solid black;
+    border-left: 10px solid  #006838;
+    text-align: center;
+    display: block;
+    border-radius: 0.2rem; /* Rounded corners */
+    /*background-color: #006838;*/
+    background-color:#e7f4fa;
+    margin-bottom:20px;
+}
+
+.Summary-Box p {    
+    font-size: 1.0rem;
+    font-weight:bold;    
+}
+
+.Summary-Box-Title {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.Summary-Box-Title h4 {
+    margin-top:0;
+    margin-bottom:0;
+    font-weight:bold;
+    text-align:left;
+}
+
+.Citations li{
+	font-size: 0.7rem;
+	
+}
+
+/*All results specific divs*/
+
+/*Set all H types in 'Results' to the correct font size*/
+
+.Results h1 {
+  font-size: 3.125rem;
+  margin-top:10px;  
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.Results h2 {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #aaa;
+  margin-top:10px;  
+  margin-bottom:10px;
+}
+
+.Results h3 {
+  font-size: 1.75rem;
+  margin-top:10px;
+}
+
+.Results h4 {
+  font-size: 1.25rem;
+}
+
+.Results h5 {
+  font-size: 1.0rem;
+}
+
+
+.figure-center {
+	width:75%;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.figure-bordered-center {
+	width:75%;
+	margin: 0 auto;
+	border: 1px solid #000000;	
+}
+
+.figure-center-imagebox {    
+	 margin:12px;		
+}
+
+.figure-bordered-center-imagebox {
+    margin:12px;
+    border: 1px solid #000000;			
+}
+
+.figure-center-img {
+    width:100%;
+	display: block;
+}
+
+.figure-center-caption {
+	margin:12px;
+}
+
+.figure-bordered-center-caption {
+	margin:12px;
+    border: 1px solid #000000;	
+}
+
+.figure-fullwidth {
+    width:100%;
+	margin: 0 auto;
+    text-align: center;
+}
+
+
+.figure-center-accordion {
+	width:100%;
+	margin: 0 auto;
+    text-align: center;
+    }
+
+
+.bullet-points {
+    list-style-position: inside;
+}
+
+/*Bootstrap accordion formatting*/
+#accordion {
+	box-sizing: border-box;
+    
+}
+
+/* Format the side menu for results */
+#SideMenu-Wrapper {
+	position:fixed;
+	width:auto;
+	right:80%;
+	max-width:160px;	
+	z-index: 998;
+}
+
+.sidebar-nav {	  
+  width:100%;  
+  right:0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float:right;
+}
+
+.SideMenu-Header {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 1.4rem;
+  line-height: 2.0rem;  
+  border-bottom:1px solid black;
+  background-color:#006838;  
+}
+
+.SideMenu-Header h4 {
+    color:white;
+}
+
+.sidebar-nav li {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 1.0rem;
+  line-height: 2.0rem;  
+  border-bottom:1px solid black;  
+  background-color:#e7f4fa;  
+}
+.sidebar-nav li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.25);
+  color: black;
+  text-decoration: underline;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+
+/* Media css formatting to change default rules when screen gets rezised */
+/*No longer wide screen */
+@media (max-width: 1732px) {
+	#SideMenu-Wrapper {
+		right:85%;
+	}	
+	
+	.sidebar-nav {
+		float:right;
+	}
+}
+
+
+/*Move results menu to the left edge */
+@media (max-width: 1500px) {
+
+	#SideMenu-Wrapper {
+		left:0;
+	}
+}
+
+/*Still main site, only some things are smaller */
+@media (max-width: 1400px) {
+	
+	#SideMenu-Wrapper {
+		position:relative;
+		width:80%;
+		left:10%;		
+		float:left;	
+		max-width:1024px;
+	}
+
+	.SideMenu-Header {
+		display:none;
+	}
+	
+	.sidebar-nav li {
+		display: inline-block;	
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;		
+		font-size:0.75rem;
+		line-height: 1.4rem;
+		border-bottom:1px solid black;
+		text-align:center;
+	}
+	.sidebar-nav {		
+		width: 100%;
+	}
+}
+
+/*Mobile devices*/
+@media (max-width: 800px) {
+	
+	#Center-Text-Column-wrapper {
+		top:40px;
+		left:0;
+	}
+	
+	/*General formatting, making it smaller*/
+	.Center-Text-Column {
+		min-width: 0px;
+	}	
+	
+	#SideMenu-Wrapper {
+		top:40px;
+		left:105px;
+		width:100%;
+		height:auto;
+		background-color:white;
+		z-index:998;
+		position:fixed;
+	}
+		
+	.sidebar-nav {
+		left:0;
+		width:100%;
+	}
+	
+	.sidebar-nav li {
+		display:inline;
+		float:left;	
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;		
+		font-size:0.75rem;
+		line-height: 1.4rem;
+		border:1px solid grey;
+		background-color:white;		
+	}
+	
+}
