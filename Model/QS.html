@@ -142,67 +142,86 @@
 
                             <div class="Textbox Results-Desc">
                                 <p>
-                                    We developed a mathematical model of the quorum sensing and cell lysis system that we have designed in the lab. The goals of the mathematical model are the following. To characterize the theoretical properties of the system. To identify which kinetic parameters dictate the behavior of the system. To be able to quickly test hypothesis about the model. To pinpoint a lab-tunable parameter that can be varied in the lab to obtain a system with the correct behavior.
+                                    We developed a mathematical model of the quorum sensing and cell lysis system. The goals of the mathematical model are the following. To characterize the theoretical properties of the system. To identify which kinetic parameters dictate the behavior of the system. To determine which parameter, that can be changed in the lab, can be varied to obtain a system with the correct behavior.
 
-To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple model</i> was used to sample parameter space. The second model that we used is the <i>Spatial Model</i>. This model was used to test hypothesis and to guide wet-lab experiments.
-                                <br>With the modeling of the quorum sensing and cell lysis system we had the following goals.</p>
+To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple model</i> was used to sample the global parameter space. The second model that we used is the <i>Spatial Model</i>. This model was used to test hypothesis and to guide wet-lab experiments.
+                                <br>With the modeling of the quorum sensing and cell lysis system we had the following goals.
                                 <ul class="bullet-points">
                                     <li>Characterize system behavior</i>
-                                    <li>Identify sensitive parameters</i>
-                                    <li>Identify sensitive parameters</i>
+                                    <li>Sample global parameter space</i>
+                                    <li>Identify parameters with high sensitivity</i>
                                     <li>Find lab-tunable parameters</i>
                                     <li>Test hypothesis</i>                                    
                                 </ul>
-                            </div>
-                        </section>
-
-                        <section class="qs">
-                            <div class="Title">
-                                <h2>Simple Model</h2> </div>
-                            <div class="Textbox Title">
-                            <p>
-                                The main goal of the simple model is to allow for a sampling of the parameter space of the kinetic rate constants of the model. To effectively do this, the biological picture has to be translated to mathematical equations. Furthermore, this model is more managable and more straightforward to interpret when the number of kinetic parameters is reduced as much as possible.
-Additionally, the Simple model does not simulate the spatial aspects of the system.
-                            </p>
-                            </div>
-                            
-                           <div class="Summary-Box">
+								</p>
+								
+								<div class="Summary-Box">
 								<div class ="Summary-Box-Title">
 									<h4>Summary</h4>
 								</div>
 								<p>									
 									We developed a mathematical model of our quorum sensing & cell lysis module.
 									In this model, both LuxR and LuxI are positively regulated by the [AHL-LuxR] dimer.
-									Our model predicts that by changing the degradation rate of LuxR, a bad parameter set may be recovered into a good parameter set. In case of spontaneos auto-activation, the degradation rate of LuxR should be increased. For a system unresponsive to the AHL-signaling of antigen-activated cells, the degradation of LuxR should be decreased. 
+									Our model predicts that by changing the degradation rate of LuxR, a bad parameter set may be recovered into a good parameter set. In case of spontaneos auto-activation, the degradation rate of LuxR should be increased. For a system unresponsive to the AHL-signaling by antigen-activated cells, the degradation of LuxR should be decreased. 
 								</p>
 					
 							</div>
- 
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#SimpleAssumptions" aria-expanded="true" aria-controls="SimpleAssumptions">
-												<div class="col-md-11">Assumptions</div><div class="col-md-1"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
-											</a>
-										</h4>
-                                    </div>
-
-                                    <div id="SimpleAssumptions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body bg-primary">
-                                            <p>
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
+								
+								<p>
+									For the system to function properly, it needs the following behaviors.
+									<h5>Bistability:</h5> Cells must be able to switch from an OFF-state to an ON-state. This requires that the system of ODE equations has equilibrium state solutions.
+									<h5>Cell signaling:</h5> Cells in the ON-state should be able to signal cells in the OFF-state to also transition to the ON-state.
+									<h5>Delayed cell lysis:</h5> Cells in the ON-state should lyse to release their split fluorescent protein. But they should do so only after singaling cells still in the OFF-state. 
+								</p>								
                             </div>
+                        </section>
 
+                        <section class="qs">
+                            <div class="Title">
+                                <h2>Simple Model</h2> 
+							</div>
+                            <div class="Textbox">
                             <p>
-                                Put a graph and a table placeholder example below.
-                            </p>
-
+                                The main goal of the simple model is to allow for a sampling of the parameter space of the kinetic rate constants of the model. To effectively do this, the biological picture has to be translated to mathematical equations. Furthermore, this model is more managable and more straightforward to interpret when the number of kinetic parameters are low. To achieve this, the following assumptions have been made.
+							</p>
+							<h3>Assumptions</h3> 
+							<h5>System</h5>
+							<p>							
+							The system consists out of three compartments; the external medium, antigen-activated bacterial cells, and signal-receiving bacterial cells. The equations of both cells are identical, except that the activator cells receive an external signal intended to put the cells in the ON-state halfway during the simulation. This simulates the addition of antigen-containing blood to the bacteria and detecting of this low concentration of antigen by a minority of the cells.
+							The total size of the system is 1 000 000 volume units. The ratio of external volume to cells is 1 cell volume unit in 1000 total volume units. This approximates a cell density of 1.0 OD<sub>600</sub>.
+							Therefore, the total cell volume is 1000 volume units. As the volume unit is defined as the volume of a single cell, there are a total 1000 cells in this system. Out of these cells, 900 cells are receiver cells, 100 are activator cells.
+							The two cellular compartments in the model actually represent only a single cell. When cellular compartments exchange species with the external medium compartment, the total amount of exchange is calculated by using the total for each cell type.
+							This means that all receiver cells are identical copies of each other. The same is true for the and activator cells.
+							</p>
+							<p>
+							Each cell has concentration values for the following species: AHL, LuxI, LuxR, [AHL-LuxR] complex, split fluorescent protein and lysis protein. In the external medium, there are concentration values for AHL, C-terminal split Fluorecent protein, N-termnial split fluorescent protein, and the fused and active fluorescent protein.
+							All compartments are assumed to be well-mixed, having a homogeneous concentration.
+							All cells are identical in size and their size is constant throughout the simulation. There is assumed to be no cell growth and therefore no dilution term.
+							There is no spatial component to any reaction in this model.
+							</p>							
+							
+							<h5>Kinetics</h5>
+							<p>
+							The levels of mRNA of all genes expressed is assumed to be in a quasi steady state. The basis for this assumption is that translation is much slower than transcription. Therefore, there are no concentration values for any mRNA species in the model.
+							Similarly, transcription factors binding to DNA is also assumed to quasi steady state. The assumption here is that binding and unbiding of a transcription factor to a promoter occurs at timescales much faster than translation.
+							The third assumption is that the dimerization of [AHL-LuxR] is also in a quasi steady state. While there has been some debate on whether [AHL-LuxR] complex formation or [AHL-LuxR] dimer formation occurs faster. We decided to go with the assumption that dimer formation is faster and in quasi steady state. Therefore, there is no concentration value for the [AHL-LuxR] dimer in the model.
+							To summarize, transcription factor-DNA complexes, mRNA, and [AHL-LuxR] dimer concentrations are implicitly modeled.
+							All promoters are assumed to have a single transcription binding site and the transcription factor is assumed to form a dimer only, giving a Hill coefficient of 2.
+							</p>
+							<p>
+							The lysis mechanism is not implicitly modeled. Lysis is assumed to occur instantaniously the moment the lysis protein value exeeds a value of 1.0. Before lysis protein reaches this concentration, the lysis protein is inert.
+                            Diffusion of AHL across the cell membrane is modeled by a linear diffusion equation depending on the concentration difference inside and outside of the cell, and a diffusion constant for diffussion of AHL across the cell membrane. This diffusion constant is asumed to be the same wenether AHL diffuses into out ouf of the cell.
+							As stated earlier, the compartments are considered to be well-mixed, which equates to assuming that both the diffusion of AHL inside each compartment is instantanious. Similarly, the split fluorescent proteins released upon cell lysis is assumed to be instantaneous.
+							</p>
+							<p>
+							Except for the fluorescent proteins in the external medium, all species have degradation rate. The split and fused fluorescent proteins are considered to be sufficiently stable so that degradation outside the cell plays no role on simulation length timescales.
+							There are no values of LuxR, LuxI and [AHL-luxR] inside the external medium. Upon lysis of the cell, only AHl and the split fluorescent proteins are released into the external medium. AHL bond to LuxR and LuxI inside lysing cells simply disappear from the model.
+							<br>
+							Some of these assumptions may result in a model that fails to incorporate important dynamics. To accurately sample the 26-dimensional parameter space, the computational time of a single simulation can not be longer than several seconds.
+							The spatial model, described in the second part of this page, alliviates some of the assumptions that are made here.
+							</p>
+                            </div>
+							
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
@@ -242,12 +261,13 @@ Additionally, the Simple model does not simulate the spatial aspects of the syst
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
 
                             <p>
-                                We want to have some more different objects to display stuff.
-                            </p>
+							<h3>Results</h3> 
+							<h5>Global parameter sampling</h5>
+							A total of 500 000 parameter sets were sampled for the double positively regulated system.
+							</p>
 
                             <div class="Textbox Results-Title">
                                 <h2>Spatial Model</h2> </div>
