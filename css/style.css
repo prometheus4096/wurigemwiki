@@ -78,6 +78,27 @@ html, body, #GlobalWrapper {
 }
 
 
+#Center-Text-Column-wrapper {
+    position:relative;
+    top: 105px;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+
+
+.Center-Text-Column {
+    position: relative;
+    clear: both;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin: auto;
+}
+
 .clearer {
     clear: both;
 }
@@ -94,6 +115,86 @@ html, body, #GlobalWrapper {
 .nested-ordered-list ol ol {
     list-style-type: lower-alpha;    
 }
+
+
+/*images and boxes */
+.figure-center {
+	width:75%;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.figure-bordered-center {
+	width:75%;
+	margin: 0 auto;
+	border: 1px solid #000000;	
+}
+
+.figure-center-imagebox {    
+	 margin:12px;		
+}
+
+.figure-bordered-center-imagebox {
+    margin:12px;
+    border: 1px solid #000000;			
+}
+
+.figure-center-img {
+    width:100%;
+	display: block;
+}
+
+.figure-center-caption {
+	margin:12px;
+}
+
+.figure-bordered-center-caption {
+	margin:12px;
+    border: 1px solid #000000;	
+}
+
+.figure-fullwidth {
+    width:100%;
+	margin: 0 auto;
+    text-align: center;
+}
+
+
+.figure-center-accordion {
+	width:100%;
+	margin: 0 auto;
+    text-align: center;
+}
+
+/*specific elements that do not have their own dedicated css file */
+
+
+.TeamPageColumn p {
+    margin-left:20px; 
+    margin-right:20px;
+    margin-top:20px;  
+    margin-bottom:20px;  
+}
+
+.Member-Profile {
+    display:table;
+    margin: auto;
+}
+
+.Member-Photo {
+    width:200px;
+    position:relative;
+    float:left;
+}
+
+.Member-desc {
+    position:relative;
+    overflow:hidden;
+    padding-left:20px; 
+    padding-right:20px;     
+}
+
+
 
 #Footer {
 	top:105px;

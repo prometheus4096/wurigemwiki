@@ -1,26 +1,9 @@
-/*General formatting for content */
-#Center-Text-Column-wrapper {
-    position:relative;
-    top: 105px;
-    clear: both;
-    width: 100%;
-    display: block;
-    margin-top: 0;
-    background-color: #FFFFFF;
-}
+/*formatting for the results pages*/
 
+/*Margins for results text paragraphs*/
 p {
 	margin-top:0;
 	margin-bottom:1rem;
-}
-
-.Center-Text-Column {
-    position: relative;
-    clear: both;
-    width: 80%;
-    min-width: 800px;
-    max-width: 1024px;
-    margin: auto;
 }
 
 .Textbox {
@@ -154,53 +137,6 @@ p {
 }
 
 
-.figure-center {
-	width:75%;
-	margin: 0 auto;
-    text-align: center;
-}
-
-.figure-bordered-center {
-	width:75%;
-	margin: 0 auto;
-	border: 1px solid #000000;	
-}
-
-.figure-center-imagebox {    
-	 margin:12px;		
-}
-
-.figure-bordered-center-imagebox {
-    margin:12px;
-    border: 1px solid #000000;			
-}
-
-.figure-center-img {
-    width:100%;
-	display: block;
-}
-
-.figure-center-caption {
-	margin:12px;
-}
-
-.figure-bordered-center-caption {
-	margin:12px;
-    border: 1px solid #000000;	
-}
-
-.figure-fullwidth {
-    width:100%;
-	margin: 0 auto;
-    text-align: center;
-}
-
-
-.figure-center-accordion {
-	width:100%;
-	margin: 0 auto;
-    text-align: center;
-    }
 
 
 .bullet-points {
