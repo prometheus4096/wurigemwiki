@@ -20,10 +20,10 @@
     <meta name="ResourceLoaderDynamicStyles" content="" />
 
     <!-- Google JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
 
     <!-- Font Awesome css -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -41,6 +41,8 @@
 <body>
 
     <!-- All items drawn on top of the page, with absolute positioning -->
+    <!-- Down arrow with absolute positioning -->
+    <img id="DownArrow" src="../images/double_arrow_grey.svg"/>
     <!-- div that sits on the bottom of the page -->
 
     <div id="GlobalWrapper">
@@ -50,13 +52,17 @@
         <div id="MainMenu">
 
             <div id="TopMenu">
+				
+				<div id="MenuIcon">
+					<a href="../index.html"><img src="../images/MenuIcon.png" /></a>
+				</div>
 
                 <div id="TopMenuButtonWrapper">
                     <ul>
                         <li class="project-li"><a href="../Project/Project.html" class="nav-item" id="project">Project</a></li>
                         <li class="wet-lab-li"><a href="../Wet_Lab/Wet_Lab.html" class="nav-item active" id="wet-lab">Wet-lab</a></li>
-                        <li class="model-li"><a href="./Model.html" class="model nav-item" id="model">Model</a></li>
-                        <li class="human-practices-li"><a href="./HP/Human_Practices.html" class="nav-item" id="human-practices">Human Practices</a></li>
+                        <li class="model-li"><a href="../Model.html" class="model nav-item" id="model">Model</a></li>
+                        <li class="human-practices-li"><a href="../HP/Human_Practices.html" class="nav-item" id="human-practices">Human Practices</a></li>
 						<li class="application-li"><a href="../Design.html" class="nav-item" id="application">Application</a></li>						
                         <li class="notebook-li"><a href="../Notebook.html" class="notebook nav-item" id="notebook">Notebook</a></li>
                         <li class="team-li"><a href="../Team.html" class="team nav-item" id="team">Team</a></li>
@@ -83,16 +89,16 @@
                         <li><a href="../Wet_Lab/Demo.html" class="demo-sub-nav-item">Demo</a></li>
                     </ul>
                     <ul id="model-sub">
-                        <li><a href="Kinetics.html" class="kinetics-sub-nav-item">Kinetics</a></li>
-                        <li><a href="QS.html" class="qs-sub-nav-item">Quorum Sensing</a></li>
-                        <li><a href="integration.html" class="integration-sub-nav-item">Integration</a></li>
+                        <li><a href="../Model/Kinetics.html" class="kinetics-sub-nav-item">Kinetics</a></li>
+                        <li><a href="../Model/QS.html" class="qs-sub-nav-item">Quorum Sensing</a></li>
+                        <li><a href="../Model/integration.html" class="integration-sub-nav-item">Integration</a></li>
                     </ul>
 
                     <ul id="human-practices-sub">
                         <li><a href="../HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>                        
                         <li><a href="../HP/Silver.html" class="safety-sub-nav-item">Safety & Ethics</a></li>
 						<li><a href="../HP/Future.html" class="future-sub-nav-item">Future Perspectives</a></li>
-                        <li><a href="../HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>						
+                        <li><a href="../HP/Engagement.html" class="Engagement-sub-nav-item">Engagement</a></li>						
                     </ul>
 					
 					<ul id="application-sub">
@@ -451,7 +457,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 			<li class="integrated-sub-li-mo"><button onclick="location.href='../HP/Gold_Integrated.html'" type="button">Integrated HP</button></li>
 			<li class="safety-sub-li-mo"><button onclick="location.href='../Safety.html'" type="button">Safety & Ethics</button></li>
 			<li class="future-sub-li-mo"><button onclick="location.href='../Future.html'" type="button">Future Perspectives</button></li>
-			<li class="outreach-sub-li-mo"><button onclick="location.href='../Outreach.hml'" type="button">Outreach</button></li>			
+			<li class="Engagement-sub-li-mo"><button onclick="location.href='../Engagement.hml'" type="button">Engagement</button></li>			
 			<li class="rollout-sub-li-mo"><button onclick="location.href='../Application/Rollout.html'" type="button">Rollout Plan</button></li>
 			<li class="device-sub-li-mo"><button onclick="location.href='../Application/Device.html'" type="button">Device</button></li>
 			<li class="collaboration-sub-li-mo"><button onclick="location.href='../Collaborations.html'" type="button">Collaborations</button></li>
@@ -508,7 +514,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -553,7 +559,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();				
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -597,7 +603,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
@@ -641,7 +647,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -684,7 +690,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".integrated-sub-li-mo").toggle();
 				$(".safety-sub-li-mo").toggle();
 				$(".future-sub-li-mo").toggle();
-				$(".outreach-sub-li-mo").toggle();				
+				$(".Engagement-sub-li-mo").toggle();				
 				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -725,7 +731,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".human-practices-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();;				
+				$(".Engagement-sub-li-mo").hide();;				
 				$(".future-sub-li-mo").hide();
 				
 				$(".application-sub-li-mo").toggle();
@@ -768,7 +774,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".human-practices-sub-li-mo").hide();			
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -812,7 +818,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				$(".human-practices-sub-li-mo").hide();		
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();	
+				$(".Engagement-sub-li-mo").hide();	
 				$(".future-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -881,7 +887,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -924,7 +930,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -968,7 +974,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1012,7 +1018,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1056,7 +1062,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1101,7 +1107,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1145,7 +1151,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1234,7 +1240,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","bold");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
@@ -1243,15 +1249,15 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","bold");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
-            $(".outreach-sub-nav-item").on("mouseover", function() {
+            $(".Engagement-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","bold");
+                $(".Engagement-sub-nav-item").css("font-weight","bold");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 			
@@ -1259,7 +1265,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","bold");
             });
 
@@ -1352,7 +1358,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".future-sub-nav-item").css("font-weight","normal");
 				$(".rollout-sub-nav-item").css("font-weight","normal");
 				$(".device-sub-nav-item").css("font-weight","normal");
@@ -1401,7 +1407,7 @@ To achieve this goal, the <i>Simple model</i> was first developed. The <i>Simple
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".future-sub-nav-item").css("font-weight","normal");
 				$(".rollout-sub-nav-item").css("font-weight","normal");
 				$(".device-sub-nav-item").css("font-weight","normal");

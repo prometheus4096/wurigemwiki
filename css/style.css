@@ -166,6 +166,40 @@ html, body, #GlobalWrapper {
     text-align: center;
 }
 
+.YoutubeVideo {
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -105px;
+    visibility: hidden;
+}
+
+/*bullet points properties */
+ul {
+    list-style-position: inside;
+}
+
+.nested-ordered-list ol ol li {
+    margin-left: 2rem;
+}
+
+.nested-ordered-list ol {
+    list-style-type: decimal;
+    list-style-position: inside;  
+}
+
+.nested-ordered-list ol ol {
+    list-style-type: lower-alpha;    
+}
+
 /*specific elements that do not have their own dedicated css file */
 
 

@@ -20,10 +20,10 @@
     <meta name="ResourceLoaderDynamicStyles" content="" />
 
     <!-- Google JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
 
     <!-- Font Awesome css -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -41,6 +41,8 @@
 <body>
 
     <!-- All items drawn on top of the page, with absolute positioning -->
+    <!-- Down arrow with absolute positioning -->
+    <img id="DownArrow" src="../images/double_arrow_grey.svg"/>
     <!-- div that sits on the bottom of the page -->
 
     <div id="GlobalWrapper">
@@ -50,13 +52,17 @@
         <div id="MainMenu">
 
             <div id="TopMenu">
+				
+				<div id="MenuIcon">
+					<a href="../index.html"><img src="../images/MenuIcon.png" /></a>
+				</div>
 
                 <div id="TopMenuButtonWrapper">
                     <ul>
                         <li class="project-li"><a href="../Project/Project.html" class="nav-item" id="project">Project</a></li>
                         <li class="wet-lab-li"><a href="../Wet_Lab/Wet_Lab.html" class="nav-item active" id="wet-lab">Wet-lab</a></li>
-                        <li class="model-li"><a href="./Model.html" class="model nav-item" id="model">Model</a></li>
-                        <li class="human-practices-li"><a href="./HP/Human_Practices.html" class="nav-item" id="human-practices">Human Practices</a></li>
+                        <li class="model-li"><a href="../Model.html" class="model nav-item" id="model">Model</a></li>
+                        <li class="human-practices-li"><a href="../HP/Human_Practices.html" class="nav-item" id="human-practices">Human Practices</a></li>
 						<li class="application-li"><a href="../Design.html" class="nav-item" id="application">Application</a></li>						
                         <li class="notebook-li"><a href="../Notebook.html" class="notebook nav-item" id="notebook">Notebook</a></li>
                         <li class="team-li"><a href="../Team.html" class="team nav-item" id="team">Team</a></li>
@@ -83,16 +89,16 @@
                         <li><a href="../Wet_Lab/Demo.html" class="demo-sub-nav-item">Demo</a></li>
                     </ul>
                     <ul id="model-sub">
-                        <li><a href="Kinetics.html" class="kinetics-sub-nav-item">Kinetics</a></li>
-                        <li><a href="QS.html" class="qs-sub-nav-item">Quorum Sensing</a></li>
-                        <li><a href="integration.html" class="integration-sub-nav-item">Integration</a></li>
+                        <li><a href="../Model/Kinetics.html" class="kinetics-sub-nav-item">Kinetics</a></li>
+                        <li><a href="../Model/QS.html" class="qs-sub-nav-item">Quorum Sensing</a></li>
+                        <li><a href="../Model/integration.html" class="integration-sub-nav-item">Integration</a></li>
                     </ul>
 
                     <ul id="human-practices-sub">
                         <li><a href="../HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>                        
                         <li><a href="../HP/Silver.html" class="safety-sub-nav-item">Safety & Ethics</a></li>
 						<li><a href="../HP/Future.html" class="future-sub-nav-item">Future Perspectives</a></li>
-                        <li><a href="../HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>						
+                        <li><a href="../HP/Engagement.html" class="Engagement-sub-nav-item">Engagement</a></li>						
                     </ul>
 					
 					<ul id="application-sub">
@@ -293,7 +299,7 @@
    							 	<h3>Mark Nijland
 							</h3>
 							<b>Wiki Manager </b> <br><br>
-							Mark is our senior team member. Within the team he worked on moddeling the quorum sensing system, as well as being our wiki manager. This function suits him well, as he is our peronal wikipedia, with knowledge of everything.<br><br>
+							Mark is our senior team member. Within the team he worked on modeling the quorum sensing system, as well as being our wiki manager. This function suits him well, as he is our peronal wikipedia, with knowledge of everything.<br><br>
               <i>''I can write a script for that''</i>
    							 </p>
 							</div>

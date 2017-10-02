@@ -23,7 +23,7 @@
     <script src="./js/jquery-3.2.1.min.js"></script>
 
     <!-- Font Awesome css -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -33,21 +33,24 @@
 
     <!-- Our iGEM WUR2017 Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
 
 </head>
 
 <body>
 
     <!-- All items drawn on top of the page, with absolute positioning -->
-    <!-- div that sits on the bottom of the page -->
-
     <div id="GlobalWrapper">
         <div class="MobileIconGlobal">
             <img src="./images/mobileicon.png" />
         </div>
-         <div id="MainMenu">
+        <div id="MainMenu">
 
             <div id="TopMenu">
+				
+				<div id="MenuIcon">
+					<a href="./index.html"><img src="./images/MenuIcon.png" /></a>
+				</div>
 
                 <div id="TopMenuButtonWrapper">
                     <ul>
@@ -90,7 +93,7 @@
                         <li><a href="./HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>                        
                         <li><a href="./HP/Silver.html" class="safety-sub-nav-item">Safety & Ethics</a></li>
 						<li><a href="./HP/Future.html" class="future-sub-nav-item">Future Perspectives</a></li>
-                        <li><a href="./HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>						
+                        <li><a href="./HP/Engagement.html" class="Engagement-sub-nav-item">Engagement</a></li>						
                     </ul>
 					
 					<ul id="application-sub">
@@ -123,17 +126,13 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg-12 ExampleText">
+                    <div class="col-lg-12">
 					
-					<!--******************* -->
-					<!--EXAMPLE STARTS HERE -->
-					<!--******************* -->
-
-					<section class="qsintro">
+					<section class="VLPIntro">
                             <div class="Title">
                                 <h1>Viral Antigens</h1> </div>
 
-                            <div class="Textbox Results-Desc">
+                            <div class="Textbox">
                                 <p>
                                     In order to safely produce antigens for phage display, two different appraoches were taken. The first focusses on the production of enveloped Virus-like-Particles (VLP). These particles are non infectious and a widely used as vaccines for various viral diseases. A second approach is to produce soluable <i>Strep</i>-tagged antigens. These antigens can be purified easier and can be direcly linked to <i>Strep</i>-tactin beads for antigen display in the phage-panning.
 								</p>
@@ -141,10 +140,10 @@
                             </div>
                         </section>
 
-                        <section class="qs">
+                        <section class="Results-VLP">
                             <div class="Title">
                                 <h2>Virus Like Particles</h2> </div>
-                            <div class="Textbox Title">
+                            <div class="Textbox">
                             <p>
                                 Three viruses were chosen for the production of antigens. Two alphaviruses (chikugunya and mayaro) and one flavivirus (Zika virus). These VLP's were generated using the invitrogen baculovirus expression system. The baculovirus expression system is widely used in biotechnology for recombinant protein expression by exploiting the life cycle of the virus in the host. Baculoviridae are DNA viruses which infect Lepidoteran insect species. During its infection cycle, two viral forms are recognized. The oclusion body derived virus (ODV) responsible for infection of the worm's midgut, and the budded virus (BV) responsible for the cell-to-cell spread of the virus. When insect cell lines are used in tissue culture, the ODV's are not necessary for infection, as no live worms are used. The proteins normally used for the occlusion bodies (polyhedrin and p10) can thus be used for recombinant protein expression in cell cultures. The advantage of using insect cells are the similar post translational modifications not possible in <i>E. coli</i>. To generate the VLP's, the cassette containing the structural proteins for the specific virus was placed in front of the polyhedrin or P10 promotor of the baculovirus, in this case Autographa californica multicapsid nucleopolyhedrovirus (AcMNPV). This DNA is then used to transfect an <i>Spodoptera frugiperda</i> (<i>Sf-21</i>) cell line in order to produce the VLP's. <br>
                                 The Laboratory of Virology has contructs available for Zika virus (ZIKV) and Chikungunya virus (CHIKV), but not for Mayaro (MAYV). As the generation of such virus like particles is similar, only the generation of MAYV will be described below.
@@ -164,61 +163,54 @@
                                     <div id="Backgroundinfo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                         <div class="panel-body bg-primary">
                                             <p>
-                                                RNA of MAYV was isolated from a Trizol sample. After the RNA was checked for degradation, cDNA was generated using Superscript RTII (see protocols). Specific primers were ordered to amplify the structural casette with attB1/2 overhanges (Gateway), after which phusion PCR was used to generate the MAYV inserts. 
-                                                A BP Gateway reaction was used to insert the fragment in a pDONR207 vector, followed by an LR Gateway reaction to move the fragment to the pDEST8 vector introducing the required polyhedrin promotor suitable for the Bac-to-bac system. In paralel the fragment was directly cloned into pFastBacDual, another vector used in the bac-to-bac system, bypassing the gateway cloning, due to initial troubles with the gateway system. Both vectors  (pFBD and pDEST8) place the MAYV casette in front of a strong Polyhedrin promotor. Correctness of the vector was confirmed using restriction analysis, colony PCR and sequencing. The resulting expression clones are abreviated MAYV-D (pDEST8 derived) and MAYV-F (pFastBacDual derived).
-                                                Both contructs were used in the Bac-to-bac system, the resulting 136kb bacmids (plasmids containing AcMNPV DNA) were confirmed using colony PCR and isolated using a bacmid isolation protocol.<br>
-                                                Bacmids of MAYV-D and MAYV-F were used to transfect an Sf-21 at cell-line using ExpreSSion in a 6 wells plate, a healthy cell line was used as control/mock. The baculovirus infection was observed for 72 hours. The medium was then replaced and the cells were moved to a fresh T25 flask. After 48 hour the infection is clearly visible in figure A.
-                                                </p>
-                                                                            <div class="figure-center">
-                                                    <div class="figure-center-imagebox" >
-                                                        <img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_P0.jpg"/>
-                                                    </div>
-                                                    <div class="figure-center-caption">
-                                                        <b>Figure A: </b> Transfection of <i>Sf</i>-21 with bacmid containing MAYV structural casette. T=48 hour, prior to harvesting. 
-                                                    </div>
-                                                </div>
-                                                <p>
+											RNA of MAYV was isolated from a Trizol sample. After the RNA was checked for degradation, cDNA was generated using Superscript RTII (see protocols). Specific primers were ordered to amplify the structural casette with attB1/2 overhanges (Gateway), after which phusion PCR was used to generate the MAYV inserts. 
+											A BP Gateway reaction was used to insert the fragment in a pDONR207 vector, followed by an LR Gateway reaction to move the fragment to the pDEST8 vector introducing the required polyhedrin promotor suitable for the Bac-to-bac system. In paralel the fragment was directly cloned into pFastBacDual, another vector used in the bac-to-bac system, bypassing the gateway cloning, due to initial troubles with the gateway system. Both vectors  (pFBD and pDEST8) place the MAYV casette in front of a strong Polyhedrin promotor. Correctness of the vector was confirmed using restriction analysis, colony PCR and sequencing. The resulting expression clones are abreviated MAYV-D (pDEST8 derived) and MAYV-F (pFastBacDual derived).
+											Both contructs were used in the Bac-to-bac system, the resulting 136kb bacmids (plasmids containing AcMNPV DNA) were confirmed using colony PCR and isolated using a bacmid isolation protocol.<br>
+											Bacmids of MAYV-D and MAYV-F were used to transfect an Sf-21 at cell-line using ExpreSSion in a 6 wells plate, a healthy cell line was used as control/mock. The baculovirus infection was observed for 72 hours. The medium was then replaced and the cells were moved to a fresh T25 flask. After 48 hour the infection is clearly visible in figure A.
+											</p>
+											<div class="figure-fullwidth">
+												<div class="figure-center-imagebox" >
+													<img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_P0.jpg"/>
+												</div>
+												<div class="figure-center-caption">
+													<b>Figure A: </b> Transfection of <i>Sf</i>-21 with bacmid containing MAYV structural casette. T=48 hour, prior to harvesting. 
+												</div>
+											</div>
+											<p>
 
-                                                The infected cells are enlarged, and show some degree of capsid bodies in the nucleus, these might indicate the presence of MAYV capsids.
-                                                The AcMNPV-MAYV-D and AcMNPV-MAYV-F baculoviruses were harvested, titrated, and the now P0 stock was used to infect a healthy T25 <i>Sf-21</i> flask at 50% confluency with an MOI of 5. Six days post infection the cells and medium were harvested. 
-                                                  </p>
-                                                                            <div class="figure-center">
-                                                    <div class="figure-center-imagebox" >
-                                                        <img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_Western.png"/>
-                                                    </div>
-                                                    <div class="figure-center-caption">
-                                                        <b>Figure B: </b> Western blot of Sf-21 cells infected with AcMNPV-MAYV, cell fraction and medium fraction, 5.5D11 Alphavirus capsid antibody. Expected size: 35kDa. Blot on right is a repead due to overloading of CHIKV lane. 
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                Western blot with specific antibody was used to determine the presence of the alphavirus capsid, as seen in figure X. Furthermore, 10 ml of medium precipitated and VLP's were purified using ultracentrifugation (protocol X). The isolated fraction was analysed using Transmission Electron Microscopy, as can be seen in figure 1.
-                                                </p>                               
-                                             
-                                            
+											The infected cells are enlarged, and show some degree of capsid bodies in the nucleus, these might indicate the presence of MAYV capsids.
+											The AcMNPV-MAYV-D and AcMNPV-MAYV-F baculoviruses were harvested, titrated, and the now P0 stock was used to infect a healthy T25 <i>Sf-21</i> flask at 50% confluency with an MOI of 5. Six days post infection the cells and medium were harvested. 
+											</p>
+											<div class="figure-fullwidth">
+												<div class="figure-center-imagebox" >
+													<img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_Western.png"/>
+												</div>
+												<div class="figure-center-caption">
+													<b>Figure B: </b> Western blot of Sf-21 cells infected with AcMNPV-MAYV, cell fraction and medium fraction, 5.5D11 Alphavirus capsid antibody. Expected size: 35kDa. Blot on right is a repead due to overloading of CHIKV lane. 
+												</div>
+											</div>
+											<p>
+											Western blot with specific antibody was used to determine the presence of the alphavirus capsid, as seen in figure X. Furthermore, 10 ml of medium precipitated and VLP's were purified using ultracentrifugation (protocol X). The isolated fraction was analysed using Transmission Electron Microscopy, as can be seen in figure 1.
+                                            </p>
+                                                                                                                                   
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                             <p>
-                            <div class="figure-center">
-                                                    <div class="figure-center-imagebox" >
-                                                        <img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_EM.png"/>
-                                                    </div>
-                                                    <div class="figure-center-caption">
-                                                        <b>Figure 1: </b>Transmission Electron Microscopy of MAYV VLP samples, stained with uranyl acetate. Pictures taken using JEOL JEM1400.
-                                                    </div>
-                                                </div>
+                            <div class="figure-fullwidth">
+								<div class="figure-center-imagebox" >
+									<img class="figure-center-img" src="./images/T--Wageningen_UR--VLP_EM.png"/>
+								</div>
+								<div class="figure-center-caption">
+									<b>Figure 1: </b>Transmission Electron Microscopy of MAYV VLP samples, stained with uranyl acetate. Pictures taken using JEOL JEM1400.
+								</div>
+							</div>
                             </p>
                             <p>
                                 Figure 1 shows the resulting objects founds in the purified VLP fractions. However, due to the level of contamination in the sample, as can be obversed in the first picture of figure 1, no conclusion can be made wether this particle is indeed the VLP of mayaro. It is very likely as the objects are spherical and sized approximately 70nm in diameter. Immunogold staining could be used to confirm this hypothesis. Virus Like Particles for chikungunya and Zika virus were produced in a similar fashion. 
-                            </p>
-											
-
-
-                        
-
-
+                            </p>		
 							
 							<div class="Textbox Citations">
 								<h3>
@@ -237,12 +229,9 @@
 
                         </section>
 
-					<!--******************* -->
-					<!--EXAMPLE ENDS HERE -->
-					<!--******************* -->
-
                     </div>
-                    <!-- ExampleText -->
+                    <!-- -->
+                    
                 </div>
                 <!-- Bootstrap row -->
 
@@ -285,7 +274,7 @@
 			<li class="project-sub-li-mo"><button onclick="location.href='./Project/Project.html'" type="button">Project</button></li>
             <li class="wet-lab-sub-li-mo"><button onclick="location.href='./Wet-lab/Wet-lab.html'" type >Wet-lab</button></li>
             <li class="model-sub-li-mo"><button onclick="location.href='./Model/Model.html'" >Model</button></li>
-            <li class="human-practices-sub-li-mo"><button onclick="location.href='/Human_Practices.html'" >Human Practices</button></li>
+            <li class="human-practices-sub-li-mo"><button onclick="location.href='./Human_Practices.html'" >Human Practices</button></li>
             <li class="application-sub-li-mo"><button onclick="location.href='./Design.html'" >Application</button></li>            
 			<li class="notebook-sub-li-mo"><button onclick="location.href='./Notebook/Protocols.html'" >Notebook</button></li>
             <li class="team-sub-li-mo"><button onclick="location.href='./Team.html'" >Team</button></li>
@@ -300,7 +289,7 @@
 			<li class="demo-sub-li-mo"><button onclick="location.href='./Results/Demo.html'" type="button">Demo</button></li>	
 			<li class="kinetics-sub-li-mo"><button onclick="location.href='./Model/Kinetics.html'" type="button">Kinetics</button></li>
 			<li class="qs-sub-li-mo"><button onclick="location.href='./Model/QS.html'" type="button">Quorum Sensing</button></li>
-			<li class="integration-sub-li-mo"><button onclick="location.href='/Model/Integration.html'" type="button"></button>Integration</button></li>
+			<li class="integration-sub-li-mo"><button onclick="location.href='./Model/Integration.html'" type="button"></button>Integration</button></li>
 			<li class="integrated-sub-li-mo"><button onclick="location.href='./HP/Gold_Integrated.html'" type="button">Integrated HP</button></li>
 			<li class="safety-sub-li-mo"><button onclick="location.href='./Safety.html'" type="button">Safety & Ethics</button></li>
 			<li class="future-sub-li-mo"><button onclick="location.href='./Future.html'" type="button">Future Perspectives</button></li>
@@ -733,6 +722,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -776,6 +766,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -820,6 +811,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -864,6 +856,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -908,6 +901,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -953,6 +947,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
@@ -997,6 +992,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
                 $(".outreach-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
