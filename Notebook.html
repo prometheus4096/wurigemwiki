@@ -22,32 +22,35 @@
     <!-- Google JQuery -->
     <script src="./js/jquery-3.2.1.min.js"></script>
 
-    <!-- Font Awesome css -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+     <!-- Font Awesome css -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="./js/bootstrap.min.js"></script>
-
+    
     <!-- Our iGEM WUR2017 Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/hp.css">
 
 </head>
 
 <body>
 
-    <!-- All items drawn on top of the page, with absolute positioning -->
-    <!-- div that sits on the bottom of the page -->
-
     <div id="GlobalWrapper">
         <div class="MobileIconGlobal">
             <img src="./images/mobileicon.png" />
         </div>
-         <div id="MainMenu">
+        <div id="MainMenu">
 
             <div id="TopMenu">
+				
+				<div id="MenuIcon">
+					<a href="./index.html"><img src="./images/MenuIcon.png" /></a>
+				</div>
 
                 <div id="TopMenuButtonWrapper">
                     <ul>
@@ -90,7 +93,7 @@
                         <li><a href="./HP/Gold_Integrated.html" class="integrated-sub-nav-item">Integrated</a></li>                        
                         <li><a href="./HP/Silver.html" class="safety-sub-nav-item">Safety & Ethics</a></li>
 						<li><a href="./HP/Future.html" class="future-sub-nav-item">Future Perspectives</a></li>
-                        <li><a href="./HP/Outreach.html" class="outreach-sub-nav-item">Outreach</a></li>						
+                        <li><a href="./HP/Engagement.html" class="Engagement-sub-nav-item">Engagement</a></li>						
                     </ul>
 					
 					<ul id="application-sub">
@@ -123,63 +126,50 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg-12 DescriptionText">
+                    <div class="col-lg-12">
 					
-					<!--******************* -->
-					<!--EXAMPLE STARTS HERE -->
-					<!--******************* -->
+						<section class="qsintro">
+								<div class="Title">
+									<h1>Notebook</h1> </div>
+								</section>
 
-					<section class="qsintro">
-                            <div class="Title">
-                                <h1>Notebook</h1> </div>
-                            </section>
-
-					<div class="Textbox-Left Results-Example">
-                        <div class="figure-fullwidth">                      
-                            <img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Collaborations.png"/>                       
-                        
-                    </div>
-
-					</div>
+						<div class="Textbox-Left Results-Example">
+							<div class="figure-fullwidth">                      
+								<a href="./Notebook/Collaborations.html"><img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Collaborations.png"/></a>    
+							</div>             
+							
+						</div>
 
 
-                    <div class="Textbox-Right Results-Example">
-                        <div class="figure-fullwidth">                      
-                            <img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Interlabs.png"/>                       
-                        
-                    </div>
-
-                    </div>
-
-
-                    <div class="Textbox-Left Results-Example">
-                        <div class="figure-fullwidth">                      
-                            <img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Labjournal.png"/>                       
-                        
-                    </div>
-
-                    </div>
+						<div class="Textbox-Right Results-Example">
+							<div class="figure-fullwidth">                      
+								<a href="./InterLab.html"><img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Interlabs.png"/></a>
+							</div>               
+							
+						</div>
 
 
-                    <div class="Textbox-Right Results-Example">
-                        <div class="figure-fullwidth">                      
-                            <img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Protocols.png"/>                       
-                        
-                    </div>
+
+						<div class="Textbox-Left Results-Example">
+							<div class="figure-fullwidth">                      
+								<img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Labjournal.png"/>         
+							</div>              
+							
+						</div>
+
+
+						<div class="Textbox-Right Results-Example">
+							<div class="figure-fullwidth">                      
+								<img class="figure-center-img" src="./images/T--Wageningen_UR--Notebook_Protocols.png"/>    
+							</div>                   
+							
+						</div>
 
                     </div>
 
-
-
-
-
-
-					<!--******************* -->
-					<!--EXAMPLE ENDS HERE   -->
-					<!--******************* -->	
-
                     </div>
-                    <!-- DescriptionText -->
+                    <!-- -->
+                    
                 </div>
                 <!-- Bootstrap row -->
 
@@ -222,7 +212,7 @@
 			<li class="project-sub-li-mo"><button onclick="location.href='./Project/Project.html'" type="button">Project</button></li>
             <li class="wet-lab-sub-li-mo"><button onclick="location.href='./Wet-lab/Wet-lab.html'" type >Wet-lab</button></li>
             <li class="model-sub-li-mo"><button onclick="location.href='./Model/Model.html'" >Model</button></li>
-            <li class="human-practices-sub-li-mo"><button onclick="location.href='/Human_Practices.html'" >Human Practices</button></li>
+            <li class="human-practices-sub-li-mo"><button onclick="location.href='./Human_Practices.html'" >Human Practices</button></li>
             <li class="application-sub-li-mo"><button onclick="location.href='./Design.html'" >Application</button></li>            
 			<li class="notebook-sub-li-mo"><button onclick="location.href='./Notebook/Protocols.html'" >Notebook</button></li>
             <li class="team-sub-li-mo"><button onclick="location.href='./Team.html'" >Team</button></li>
@@ -237,11 +227,11 @@
 			<li class="demo-sub-li-mo"><button onclick="location.href='./Results/Demo.html'" type="button">Demo</button></li>	
 			<li class="kinetics-sub-li-mo"><button onclick="location.href='./Model/Kinetics.html'" type="button">Kinetics</button></li>
 			<li class="qs-sub-li-mo"><button onclick="location.href='./Model/QS.html'" type="button">Quorum Sensing</button></li>
-			<li class="integration-sub-li-mo"><button onclick="location.href='/Model/Integration.html'" type="button"></button>Integration</button></li>
+			<li class="integration-sub-li-mo"><button onclick="location.href='./Model/Integration.html'" type="button"></button>Integration</button></li>
 			<li class="integrated-sub-li-mo"><button onclick="location.href='./HP/Gold_Integrated.html'" type="button">Integrated HP</button></li>
 			<li class="safety-sub-li-mo"><button onclick="location.href='./Safety.html'" type="button">Safety & Ethics</button></li>
 			<li class="future-sub-li-mo"><button onclick="location.href='./Future.html'" type="button">Future Perspectives</button></li>
-			<li class="outreach-sub-li-mo"><button onclick="location.href='./Outreach.hml'" type="button">Outreach</button></li>			
+			<li class="Engagement-sub-li-mo"><button onclick="location.href='./Engagement.hml'" type="button">Engagement</button></li>			
 			<li class="rollout-sub-li-mo"><button onclick="location.href='./Application/Rollout.html'" type="button">Rollout Plan</button></li>
 			<li class="device-sub-li-mo"><button onclick="location.href='./Application/Device.html'" type="button">Device</button></li>
 			<li class="collaboration-sub-li-mo"><button onclick="location.href='./Collaborations.html'" type="button">Collaborations</button></li>
@@ -298,7 +288,7 @@
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -343,7 +333,7 @@
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();				
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -387,7 +377,7 @@
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
@@ -431,7 +421,7 @@
 				$(".integration-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -474,7 +464,7 @@
 				$(".integrated-sub-li-mo").toggle();
 				$(".safety-sub-li-mo").toggle();
 				$(".future-sub-li-mo").toggle();
-				$(".outreach-sub-li-mo").toggle();				
+				$(".Engagement-sub-li-mo").toggle();				
 				
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -515,7 +505,7 @@
 				$(".human-practices-sub-li-mo").hide();
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();;				
+				$(".Engagement-sub-li-mo").hide();;				
 				$(".future-sub-li-mo").hide();
 				
 				$(".application-sub-li-mo").toggle();
@@ -558,7 +548,7 @@
 				$(".human-practices-sub-li-mo").hide();			
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();
+				$(".Engagement-sub-li-mo").hide();
 				$(".future-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -602,7 +592,7 @@
 				$(".human-practices-sub-li-mo").hide();		
 				$(".integrated-sub-li-mo").hide();
 				$(".safety-sub-li-mo").hide();
-				$(".outreach-sub-li-mo").hide();	
+				$(".Engagement-sub-li-mo").hide();	
 				$(".future-sub-li-mo").hide();
 				$(".application-sub-li-mo").hide();
 				$(".rollout-sub-li-mo").hide();
@@ -670,8 +660,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -713,8 +704,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -757,8 +749,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -801,8 +794,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -845,8 +839,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -890,8 +885,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -934,8 +930,9 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".rollout-sub-nav-item").css("font-weight","normal");
+                $(".device-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".collaboration-sub-nav-item").css("font-weight","normal");
                 $(".protocols-sub-nav-item").css("font-weight","normal");
                 $(".interlab-sub-nav-item").css("font-weight","normal");
@@ -1024,7 +1021,7 @@
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","bold");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
@@ -1033,15 +1030,15 @@
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","bold");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 
-            $(".outreach-sub-nav-item").on("mouseover", function() {
+            $(".Engagement-sub-nav-item").on("mouseover", function() {
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","bold");
+                $(".Engagement-sub-nav-item").css("font-weight","bold");
 				$(".future-sub-nav-item").css("font-weight","normal");
             });
 			
@@ -1049,7 +1046,7 @@
 				clearTimeout(timer);
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
 				$(".future-sub-nav-item").css("font-weight","bold");
             });
 
@@ -1142,7 +1139,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".future-sub-nav-item").css("font-weight","normal");
 				$(".rollout-sub-nav-item").css("font-weight","normal");
 				$(".device-sub-nav-item").css("font-weight","normal");
@@ -1191,7 +1188,7 @@
                 $(".integration-sub-nav-item").css("font-weight","normal");
                 $(".integrated-sub-nav-item").css("font-weight","normal");
                 $(".safety-sub-nav-item").css("font-weight","normal");
-                $(".outreach-sub-nav-item").css("font-weight","normal");
+                $(".Engagement-sub-nav-item").css("font-weight","normal");
                 $(".future-sub-nav-item").css("font-weight","normal");
 				$(".rollout-sub-nav-item").css("font-weight","normal");
 				$(".device-sub-nav-item").css("font-weight","normal");
@@ -1207,71 +1204,7 @@
             //Reset timer when hovering over submenu bar
             $("#SubMenu").on("mouseover", function() {
                 clearTimeout(timer);
-            });
-
-			
-			(function() {
-               "use strict";
-
-                document.onmousemove = handleMouseMove;
-
-                function handleMouseMove(event) {
-                    var dot, eventDoc, doc, body, pageX, pageY;
-
-                    event = event || window.event; // IE-ism
-
-                    // If pageX/Y aren't available and clientX/Y
-                    // are, calculate pageX/Y - logic taken from jQuery
-                    // Calculate pageX/Y if missing and clientX/Y available
-                    if (event.pageX == null && event.clientX != null) {
-                        eventDoc = (event.target && event.target.ownerDocument) || document;
-                        doc = eventDoc.documentElement;
-                        body = eventDoc.body;
-
-                        event.pageX = event.clientX +
-                            (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-                            (doc && doc.clientLeft || body && body.clientLeft || 0);
-                        event.pageY = event.clientY +
-                            (doc && doc.scrollTop || body && body.scrollTop || 0) -
-                            (doc && doc.clientTop || body && body.clientTop || 0);
-                    }
-
-					// Add a dot to follow the cursor
-					//Calculate percentage horizontal
-					var Xpercent = ($(window).width() - event.pageX) /  $(window).width()
-					var Ypercent = ($(window).height() - event.pageY) /  $(window).height()
-					//Display when cursor in the bottom center of the screen, while not in mobile menu mode			
-					if(Xpercent > 0.25 && Xpercent < 0.75 && Ypercent < 0.2 && $('#MobileMenu').css('display') == "none"){
-						$("#DownArrow").show();						
-					}
-					if(Xpercent < 0.25 || Xpercent > 0.75 || Ypercent > 0.20) {
-						$("#DownArrow").hide();
-					}				
-                }
-
-
-            })();
-
-            //Make transparant when scrolling down
-            $(window).scroll(function() {
-
-                //get scroll position
-                //multiply by 1.5 so the arrow will become transparent half-way up the page
-                var topWindow = $(window).scrollTop() * 1.5;
-
-                //get height of window
-                var windowHeight = $(window).height() - 105;
-
-                //set position as percentage of how far the user has scrolled 
-                var position = topWindow / windowHeight;
-                //invert the percentage
-                position = 0.5 - 0.5*position;
-
-                //define arrow opacity as based on how far up the page the user has scrolled
-                //no scrolling = 1, half-way up the page = 0
-                $('#DownArrow').css('opacity', position);
-
-            });
+            });			
 
         });
 

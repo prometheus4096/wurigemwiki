@@ -1,7 +1,7 @@
 /*format the main front page*/
 #FrontPage {
 	position:relative;
-    top: 105px;
+    top:105px;
 	height: calc(100% - 105px);
 	/* Opera */
     height: -o-calc(100% - 105px);
@@ -15,6 +15,7 @@
     height: calc(100% - 105px); 
     width: 100%;
     background-color: #FFFFFF;
+    z-index:-1;
 }
 
 .FrontpageTitle {	
@@ -40,6 +41,7 @@
     display: block;
     margin-top: 0;
     background-color: #FFFFFF;
+z-index:-1;
 }
 
 .Center-Text-Column {

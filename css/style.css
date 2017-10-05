@@ -6,7 +6,8 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-family: roboto, sans-serif;	
+    font-family: roboto, sans-serif;
+    color:#1d2129;'/*facebook dark grey*/	
 }
 
  h1,h2,h3,h4,h5,h6 {
@@ -99,6 +100,10 @@ html, body, #GlobalWrapper {
     margin: auto;
 }
 
+.col-centered {
+    padding:0;
+}
+
 .clearer {
     clear: both;
 }
@@ -175,6 +180,76 @@ html, body, #GlobalWrapper {
 }
 
 
+.Title-centered {
+    text-align: center;
+}
+
+.Textbox {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+}
+
+.Textbox-Left {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: left;    
+}
+
+.Textbox-Right {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: right;   
+}
+
+
+.Textbox-center {
+    text-align: center;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+}
+
+.Overviewbox-Left {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: left;    
+}
+
+.Overviewbox-Right {
+    width:50%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 1.0rem;
+    float: right;   
+
+}
+
+.Overviewbox {
+    width:100%;
+	margin: 0 auto;
+    text-align: center;
+    padding:2%;
+}
+
+.overview-figure {
+    width:100%;
+    margin:auto;
+}
+
+.Overviewbox:hover {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);   
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -224,11 +299,12 @@ ul {
 .Member-desc {
     position:relative;
     overflow:hidden;
-    padding-left:20px; 
-    padding-right:20px;     
+    padding-left:20px;
 }
 
-
+.Member-desc p {
+    line-height:1.0;
+}
 
 #Footer {
 	top:105px;
@@ -271,23 +347,4 @@ ul {
 	z-index: 999;
 }
 
-#UpButton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: black; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-	font-size:2rem;
-}
-
-#UpButton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
 

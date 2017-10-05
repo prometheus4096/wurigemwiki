@@ -24,32 +24,60 @@
 }
 
 #MainMenu {
-    position: fixed;
+    position:fixed;
     top: 0px;
     width: 100%;
-    height: 105px;
-	z-index: 999;
+    height: 105px;    
+}
+
+
+#MainMenuLeft {
+    width:35%;
+    height:105px;
+    float:left;
+    background-color:#e1fe80;
+    border-bottom: 3px solid #BFE541;
+}
+
+#MainMenuRight {
+    width:65%;
+    height:105px;
+    float:right;
+}
+
+#MenuGreenBlock {
+    position:absolute;
+    overflow:auto;
+    background-color: #006838;
+    height:105px;    
+    width:26%;
+    float:left;
+    z-index:1;
 }
 
 #TopMenu {
     height: 65%;
-    width: 100%;    
+    width: 100%;
+    float:right;    
     background-color: #006838;
 }
 
-#MenuIcon {
-    position:relative;
-    height:100%;
-    left:12.5%;
+#MenuIcon {    
+    height:105px;
+    width:100%;
+    float:left; 
 }
 
+
 #MenuIcon img {
+    position:relative;
     height:100%;
+    float:right;
+    z-index:1000;
 }
 
 #TopMenuButtonWrapper {
-    position: fixed;
-    width: 65%;
+    width: 100%;
     height: 68px;
     top: 0;
     right: 0;
@@ -90,16 +118,17 @@
 
 #SubMenu {
     height: 35%;
-    width: 100%;
-	background-color:#FFFFFF;   
+    width: 100%; 
 }
 
 #SubMenuButtonWrapper {
-    position: fixed;
+    position:absolute;
     height: 36.75px;
     width: 65%;
     top: 68px;
     right: 0;
+    background-color:#e1fe80;
+    border-bottom: 3px solid #BFE541; 
 }
 
 #SubMenuButtonWrapper ul {
@@ -392,16 +421,16 @@ ul.breadcrumb li a:hover {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: black; /* Set a background color */
-    color: white; /* Text color */
+    width:120px;
+    height:120px;   
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-	font-size:2rem;
 }
 
+
 #UpButton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #E1FE80; /*Add a green background on hover */
 }
 
 /*Mobile site elements*/
@@ -417,6 +446,7 @@ ul.breadcrumb li a:hover {
 }
 
 #MobileMenu ul {
+    list-style-position: outside;
 	overflow:hidden;
 	height:100%;
 	width:50%;	
@@ -431,25 +461,24 @@ ul.breadcrumb li a:hover {
 }
 
 #MobileMenu ul li {	
-	height:12.5%;
+	height:11.11%;
 }
 
 #MobileMenu ul li button{
 	height:100%;
 	width:100%;
-	border: 1px solid black;	
 	background:white;
     color:black;
-	/*border: 1px solid #141823;;*/
 	display: inline;    
 	text-align: center;
 	font-size:4.0vw;
 	cursor:pointer;	
-	text-decoration:none;
+	text-decoration:none;    
+    border: 0.25px solid black;
 }
 
 #MobileSubMenu li {	
-	display:none;    	
+	display:none;       	 	
 }
 
 #MobileMenu ul li a{
@@ -457,20 +486,18 @@ ul.breadcrumb li a:hover {
     vertical-align: middle;
     line-height: normal;
 	height:100%;
-	width:100%;
-	border: 1px solid black;	
+	width:100%;	
 	background:white;
-    color:black;
-	/*border: 1px solid #141823;;*/    
+    color:black;   
 	text-align: center;
 	font-size:4.0vw;
 	cursor:pointer;
-	text-decoration:none;
+	text-decoration:none;    
 }
 
 .MobileIconGlobal {
     display:none;
-	position:fixed;
+	position:relative;
     top: 0;
     cursor:pointer;   
 	height:110px;
@@ -480,9 +507,10 @@ ul.breadcrumb li a:hover {
 	
 .MobileIconGlobal  img {
     z-index:999;
-    height:100%;
+    height:105px;
 }
 
+.
 .MobileIcon-li-mo img {
     z-index:999;
     height:100%;
@@ -496,14 +524,29 @@ ul.breadcrumb li a:hover {
 }
 
 
+@media (max-width: 1900px) {
+    #MenuGreenBlock {    
+        width:16%;
+    }
+}
+
+
 /*Align menu on the left when window is smaller*/
-@media (max-width: 1220px) {
+@media (max-width: 1750px) {
     /*whatever appears in the menu at the left either disappears or is now on top of the menu*/
     #TopMenuButtonWrapper {
-        position: relative;
+        position:relative;
         padding-left:16px;
         width: 100%;
         float: right;
+    }
+
+    #MainMenuLeft {    
+        display:none;
+    }
+
+    #MainMenuRight {    
+        width:100%;
     }
 
     #MenuIcon {
@@ -533,7 +576,7 @@ ul.breadcrumb li a:hover {
 }
 
 /*Mobile devices*/
-@media (max-width: 800px) {
+@media (max-width: 860px) {
    
 	body, html { 
 	/*overflow-x:hidden; */	
@@ -548,8 +591,7 @@ ul.breadcrumb li a:hover {
 	
 	/*Do stuff with mobile*/	
 	.MobileIconGlobal {
-        display:inline;	
-		width:100%;
+        display:inline;			
 	}
 		
     #TopMenuButtonWrapper {

@@ -141,8 +141,7 @@
                             <div class="Textbox Results-Desc">
     <!--Introduction-->
 								<p>
-                                  The aim of this project is to express African Sleeping Sickness (Trypanosoma brucei) antigens in E. coli, and to purify these antigens. These are then used for the selection of Affinity Bodies using phage display. In this way, the detection module of the diagnostic device is made to specifically detect surface antigens of Trypanosomes, thus HAT. Hence, this part functions as a proof-of-concept that Mantis can detect parasitic infections next to viral infections. 
-								</p>
+                                  The aim of this project is to express African Sleeping Sickness &#40;<i>Trypanosoma brucei gambiense</i>&#41; antigens in <i>E. coli</i>, and to purify these antigens using the Strep-II tag. These are then used for the selection of Affinity Bodies using phage display. In this way, the detection module of the diagnostic device is made to specifically detect surface antigens of Trypanosomes, thus HAT. Hence, this part functions as a proof-of-concept that, besides viral infections, Mantis can detect parasitic infections as well. </p>
 								
                             </div></section>
                         
@@ -162,53 +161,72 @@
                                         <div class="panel-body bg-primary">
     <!--Text for Approach-->                                        
 											
-									<h4>Introduction</h4><p>
-									The proteins that are selected to be used for the phage display are surface proteins from Trypanosomes. The selection was made based on the titre in the blood and the reactivity to IgG in earlier findings. The surface of Trypanosomes is mostly covered in the Lille Trypanosoma Antigen Type Variant Surface Glycoprotein 	&#40;LiTat VSG&#41;. This makes it unsuitable to be used as the protein to which our test is based upon. The Invariant Surface Glycoprotein 	&#40;ISG&#41; is also a surface antigen of Trypanosomes. There are several forms, of different sizes. Of those, ISG64 	&#40;64 kDa&#41; and ISG65 	&#40;65 kDa&#41; are the most reactive towards antibodies for both forms of HAT, followed by the 75 kDa ISG75 <mark>Biéler et al., 2016</mark>. By removing the signal peptide on the N-terminal, and the transmembrane domain on the C-terminal, a soluble protein is created <mark>Sullivan, Wall, Carrington, & Ferguson, 2013</mark>. This will simplify the expression and purification process, but keeping the immunogenicity. Although there are a 100 VSG for every ISG, its genetic stability proposes advantages <mark>Overath, Chaudhri, Steverding, & Ziegelbauer, 1994</mark>. </p>
+				<h4>Introduction</h4><p>
+									The proteins that are selected to be used for the phage display are surface proteins from Trypanosomes. The selection was made based on the titre in the blood and the reactivity to IgG in earlier findings. The surface of Trypanosomes is mostly covered in the Lille Trypanosoma Antigen Type Variant Surface Glycoprotein 	&#40;LiTat VSG&#41;. This makes it unsuitable to be used as the protein to which our test is based upon. The Invariant Surface Glycoprotein 	&#40;ISG&#41; is also a surface antigen of Trypanosomes. There are several forms, of different sizes. Of those, ISG64 	&#40;64 kDa&#41; and ISG65 	&#40;65 kDa&#41; are the most reactive towards antibodies for both forms of HAT, followed by the 75 kDa ISG75 	&#91;1&#93;. By removing the signal peptide on the N-terminal, and the transmembrane domain on the C-terminal, a soluble protein is created &#91;2&#93;. This will simplify the expression and purification process, but keeping the immunogenicity. Although there are a 100 VSG for every ISG, its genetic stability is adventurous &#91;3&#93;. </p>
 									
-									<h4>Methods</h4><p>The three ISG antigens suitable as a biomarker for HAT are PCR amplified from genomic Trypanosoma brucei DNA. Genomic DNA from Trypanosoma brucei gambiense is made available by the WHO Collaborating Center for Research and Training on Human African Trypanosomiasis Diagnostics in Antwerp. The extracellular domains of ISG64, ISG65 and ISG75 are PCR amplified using gene-specific primers extended with a 5 KpnI and SacI restriction sites. 
+				<h4>Construct</h4>
+									<p>The three ISG antigens suitable as a biomarker for HAT are PCR amplified from genomic Trypanosoma brucei DNA. Genomic DNA from Trypanosoma brucei gambiense is made available by the WHO Collaborating Center for Research and Training on Human African Trypanosomiasis Diagnostics in Antwerp. The extracellular domains of ISG64, ISG65 and ISG75 are PCR amplified using gene-specific primers extended with a 5&rsquo; KpnI and SacI restriction sites. 
+									This is followed by cloning into the Multiple Cloning Site (MSC) of the <i>E. coli</i> expression vector pET52b via restriction digestion with KpnI and SacI. This resulted in a recombinant gene &#40;rISG&#41; with a 5&rsquo; Strep-tag II and a 3&rsquo; 10x HIS-tag. The construct is present under a IPTG-inducible promotor, see figure 1.</p>
 									
+								
+								 <div class="figure-fullwidth">						                   
+							                <img class="figure-center-img" src="./images/Antigens/T--Wageningen_UR--Results_Antigens_Construct_Map.png"/>
+					                    </div>
+									<div class="figure-center">
+									<div class="figure-center-caption">
+									<b>Figure 1:</b> Map of the recombinant ISG genes after clonation into the pET52b expression vector.  
+								</div></div>
+								
+								
+									<p>This construct is transformed to <i>E. coli DH5&alpha;</i>. The constructs were checked with colony PCR and sequencing. The sequence of the construct was compared to the sequence of the original template, as well as the reference sequence from online databases. Whereas the sequence of rISG64 and rISG65 could be validated, the one of rISG75 could not. Too many unexplainable mismatches were found to continue with protein expression. One explanation could be that ISG75 is part of a gene family, and a family member has been amplified. Because the correctness of the sequence could not be verificated, this construct was not further used. </p>  
 									
-									This is followed by cloning into the Multiple Cloning Site (MSC) of the <i>E. coli</i> expression vector pET52b via restriction digestion with KpnI and SacI. This resulted in a recombinant gene &#40;rISG&#41; with a 5' Strep-tag II and a 3' 10x HIS-tag. The construct is present under a IPTG-inducible promotor. This construct is transformed to E. coli DH5a. The constructs were checked with colony PCR and sequencing. <mark>drop ISG75</mark> After this validation step, the plasmid was transformed to E. coli BL21 Rosetta, for protein expression. This strain contains the pRARE plasmid, containing extra tRNA genes compromosing for the rare codons in the parasitic genome. </p>
+									<p>After this validation step, the two remaining plasmids were transformed to <i>E. coli Rosetta</i> for protein expression. This strain contains the pRARE plasmid, having extra tRNA genes compromising for the rare codons present in the parasitic genome. </p>
+				
+				<h4>Protein expression</h4>
+									<p>The induction of protein expression of the pET52b-ISG constructs was tested, as well as the solubility of the recombinant proteins, see figure 2. </p>
 									
-									<p>The induction of protein expression was tested, as well as the solubility of the recombinant protens, <mark>link to image and description</mark> </p>
-									
-									
-									<p>The proteins are purificated by straptactin affinity purification via the StrepII-tag. All protocols can be found on <mark>link</mark>. </p>
-									
-									
-
-
-
-
-
-											
-                                            </p>
 											
 											<div class="figure-center">
 								<div class="figure-center-imagebox" >
-									<img class="figure-center-img" src="./images/Results/Antigens/T--Wageningen_UR--Results_Antigens_SDS_Test_Expression.png"/>
+									<img class="figure-center-img" src="./images/Antigens/T--Wageningen_UR--Results_Antigens_SDS_Test_Expression.png"/>
 								</div>
 								<div class="figure-center-caption">
-									<b>Figure 1:</b> SDS Gel of cell lysate before and after IPTG induction, as well as the soluble and insoluble fraction hereof. The assumed rISG64 and rISG64 is indicated with the red box. 
-								</div></div> </div> </div></div></div>
+									<b>Figure 2:</b> SDS Gel of cell lysate before and after IPTG induction, as well as the soluble and insoluble fraction hereof. The assumed bands for rISG64 and rISG65 are indicated with the red box. 
+								</div></div> 
+
+								
+								<p>As seen, protein expression could be induced, where the protein is present in the soluble fraction as expected. </p>
+								
+				<h4>Protein purification</h4>
+								<p>Next, 200 ml cultures were grown, following by induction with 0.5 mM IPTG. Protein purification was conducted by affinity purification in gravity columns using strep-tactin, making use of the StrepII-tag. Purity was checked on SDS gel, and protein concentration in the eluted fractions was measured using a protein quantitation assay. All protocols can be found on <mark>link to protocol section and lab journal</mark>. </p>
+								
+								</div> </div></div></div>
 							
 	<!--Text  for final result-->						
-                            <p>
-                                Show the final result 
-								
+                            <p>The extracellular domain of the Invariant Surface Glycoprotein 64 and 65, fused to both a StrepII-tag and 10x HIS-tag has succesfully been purified using strep-tactin gravity column, see figure 3. </p>
 								
 							<div class="figure-center">						
-							<img class="figure-center-img" src="./images/Results/Antigens/T--Wageningen_UR--Results_Antigens_SDS_rISG64.png"/>
+							<img class="figure-center-img" src="./images/Antigens/T--Wageningen_UR--Results_Antigens_SDS_rISG64.png"/>
+							</div>
+								
+							<div class="figure-center">						
+							<img class="figure-center-img" src="./images/Antigens/T--Wageningen_UR--Results_Antigens_SDS_rISG65.png"/>
 								<div class="figure-center-caption">
-		<b>Figure 2:</b> Here we have a caption. This text will describe the figure and explain how it relates to the experiment described in the text.
+		<b>Figure 3:</b> SDS gel of the protein fractions eluted from the strep-tactin column, both the flowthrough after loading the cell lysis onto the column, a few washing steps and the elution fractions. 
 								</div></div>
 								
-							<div class="figure-center">						
-							<img class="figure-center-img" src="./images/Results/Antigens/T--Wageningen_UR--Results_Antigens_SDS_rISG65.png"/>
-								<div class="figure-center-caption">
-		<b>Figure 3:</b> Here we have a caption. This text will describe the figure and explain how it relates to the experiment described in the text.
-								</div></div>	
 							
+							<p>The final 50 &mu;l elution fraction &#40;Elute 4&#41; contains 283 &mu;g/ml protein for rISG64, whereas the elution for rISG65 just contains 63 &mu;g/ml protein. As seen from the high amounts of protein in the flowthrough, the column has reached its saturation point. </p> 
+							
+							<p>
+							These tagged proteins, bound to the strep-tactin beads, are used for phage display selection <mark>link</mark>.</p>
+							<p>Moreover, two biobricks were created of these constructs. For this, the recombinant ISG gene, including the two tags, was cloned into the linearized pSB1C3 vector using biobrick assembly <mark>link to BB page</mark>.</p>
+																	
+							<div class="figure-fullwidth">						
+							<img class="figure-center-img" src="./images/Antigens/T--Wageningen_UR--Results_Antigens_BioBrick_HAT.png"/>
+								<div class="figure-center-caption">
+		<b>Figure 4:</b> Map of the Biobrick that was created from the rISG genes originating from the 64 and 65 kDa ISG protein of <i>Trypanosoma brucei gambiense</i>. The pSB1C3 vector now has the rISG construct between the prefix and suffix. 
+								</div></div>
 	<!-- References -->							
 							<div class="Textbox Citations">
 								<h3>
@@ -216,9 +234,9 @@
 								</h3>
 							
 								<ol>
-									<li>Williams, Joshua W., et al. "Robust and sensitive control of a quorumâsensing circuit by two interlocked feedback loops." <i>Molecular systems biology</i> 4.1 (2008): 234.</li>
-									<li>Bousse, Luc. "Whole cell biosensors." <i>Sensors and Actuators B: Chemical</i> 34.1-3 (1996): 270-275.</li>
-									<li>Bassler, Bonnie L., and Richard Losick. "Bacterially speaking." <i>Cell</i> 125.2 (2006): 237-246.</li>
+									<li>Bi&#233;ler, Sylvain, et al. "Evaluation of Antigens for Development of a Serological Test for Human African Trypanosomiasis." <i>PloS one</i> 11.12 (2016): e0168074.</li>
+									<li>Sullivan, Lauren, et al. "Proteomic selection of immunodiagnostic antigens for human African trypanosomiasis and generation of a prototype lateral flow immunodiagnostic device." <i>PLoS neglected tropical diseases</i> 7.2 (2013): e2087.</li>
+									<li>Overath, P., et al. "Invariant surface proteins in bloodstream forms of Trypanosoma brucei." <i>Parasitology Today</i> 10.2 (1994): 53-58.</li>
 								</ol>
 							
 							</div>
