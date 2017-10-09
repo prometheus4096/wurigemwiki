@@ -1,0 +1,25 @@
+.Overview-Top {
+	width:100%;
+	margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.Overview-Left-Arrow {
+    width:10%;
+	float:left;
+	margin:0;
+
+}
+
+.Overview-Center {
+	width:80%;
+	float:left;
+	margin:0;
+}
+
+.Overview-Right-Arrow {
+    width:10%;
+	float:right;
+	margin:0;
+
+}

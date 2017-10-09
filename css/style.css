@@ -184,6 +184,27 @@ html, body, #GlobalWrapper {
     text-align: center;
 }
 
+/*General formatting for content */
+#Center-Text-Column-wrapper {
+    position:relative;
+    top: 105px;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    background-color: #FFFFFF;
+z-index:-1;
+}
+
+.Center-Text-Column {
+    position: relative;
+    clear: both;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin: auto;
+}
+
 .Textbox {
 	margin-top: 4px;
 	margin-bottom: 4px;
